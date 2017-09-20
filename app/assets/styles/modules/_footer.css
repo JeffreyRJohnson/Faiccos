@@ -1,0 +1,12 @@
+.footer{
+  text-align:center;
+  padding-bottom:20px;
+}
+
+.footer__link{
+  color:black;
+}
+
+.footer__link:hover{
+  color:goldenrod;
+}

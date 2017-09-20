@@ -1,45 +1,65 @@
+
+
+// .wrapper{
+//   // padding-top:80px;
+//   // padding-bottom:80px;
+//   width:100%;
+//   height:100%;
+// }
+
+// .wrapper::after{
+//   background: url("../../assets/images/background-small.jpeg") no-repeat fixed center;
+//  content: "";
+//   opacity: 0.5;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: fixed;
+//   z-index: -1;  
+  
+// }
+
+
+// .wrapper-inner{
+//   background:#fff;
+//   width:80%;
+//   margin-left:auto;
+//   margin-right:auto;
+
+// }
+
 body {
   font-family: 'Roboto', sans-serif;
    color: #333;
 }
 
-.wrapper{
-  padding-top:80px;
-  padding-bottom:80px;
-  width:100%;
-  height:100%;
+
+@font-face {
+font-family: "Voyage Regular";
+src: url("Voyage Regular.otf");
 }
-
-.wrapper::after{
-  background: url("../../assets/images/spices2.jpg") no-repeat fixed center;
- content: "";
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;  
-  min-width:100%;
-}
-
-
-.wrapper-inner{
-  background:#fff;
-  width:80%;
-  margin-left:auto;
-  margin-right:auto;
-
-}
-
-
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-h1{
-  color:green;
+h3{
+  font-size:3em;
+    font-family: "Voyage Regular";
+  text-align:center;
+}
+
+.wrapper{
+  max-width:100%;
+}
+
+button{
+  border:2px solid goldenrod;
+  background:none;
+  color:goldenrod;
+   padding:8px 12px;
+ cursor:pointer;
 }
 

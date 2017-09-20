@@ -1,18 +1,40 @@
-header{
+.nav__burger{
+  color:white;
+  position:absolute;
+  top:20px;
+  right:20px;
+  z-index:8;
+}
+
+.nav__row{
+     overflow:hidden;
+    background:#000;
+     height:0;
     position:absolute;
-    z-index:2;
+   z-index:5; 
+   width:100%;
+   top:0;
+}
+
+.nav__row--open{
+    height:auto;
+    padding:20px;
+margin-top:0;
+}
+
+.nav__list{
+    float:none;
+    text-align:left;
+    width:100%;
+    margin:0;
+    list-style-type:none;
+}
+
+.nav__link{ 
     color:#fff;
-    top:120px;
-    right:160px;
-}
-
- ul li{
-    display:inline-block;
-    margin-left:10px;
-}
-
- ul li a{
-     text-decoration:none; 
-     color:white;
-     font-size:20px;  
+     padding: 10px;
+    border-bottom: 1px solid #404040;
+    display:block;
+    margin:0;
+    text-decoration:none;
 }

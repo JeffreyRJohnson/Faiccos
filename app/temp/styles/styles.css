@@ -427,14 +427,14 @@ body {
 }
 
 .wrapper{
-  padding-top:80px;
-  padding-bottom:80px;
+  // padding-top:80px;
+  // padding-bottom:80px;
   width:100%;
   height:100%;
 }
 
 .wrapper::after{
-  background: url("../../assets/images/spices2.jpg") no-repeat fixed center;
+  background: url("../../assets/images/background-small.jpeg") no-repeat fixed center;
  content: "";
   opacity: 0.5;
   top: 0;
@@ -443,7 +443,7 @@ body {
   right: 0;
   position: fixed;
   z-index: -1;  
-  min-width:100%;
+  
 }
 
 .wrapper-inner{
@@ -462,6 +462,29 @@ img {
 h1{
   color:green;
 }
+
+.reservations{
+  text-align:center;
+  
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../../assets/images/specialities-small.jpeg');
+
+    /* Full height */
+    // height: 100%; 
+    height:200px;
+    width:100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    z-index:5;
+    }
 
 header{
     position:absolute;
@@ -490,7 +513,7 @@ ul li a{
 
 .large-hero__text-content {
   position: absolute;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 0;
@@ -501,14 +524,14 @@ ul li a{
 .large-hero__title {
   font-weight: 300;
   color: #fff;
-  font-size: 4.8rem;
+  font-size: 2.8rem;
   margin: 0;
 }
 
 .large-hero__subtitle {
   font-weight: 300;
   color: #fff;
-  font-size: 2.9rem;
+  font-size: 1.0rem;
   margin: 0;
 }
 
@@ -539,3 +562,4 @@ ul li a{
   font-size: 1.25rem;
   padding: 1.1rem 1.9rem;
 }
+

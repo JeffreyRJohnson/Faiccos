@@ -1,0 +1,29 @@
+.menu-section__row{
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+.menu-section__row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.menu-section_list{
+    float:none;
+    width:90%;
+    margin: 30px 2% !important;
+}
+
+@media screen and (min-width:480px){
+.menu-section__list{
+    float: left;
+    width: 42%;
+    padding: 0;
+    margin: 20px 0 20px 8%;
+}
+
+.menu-section__list:nth-child(odd){
+    margin: 20px 8% 20px 0;
+}
+}
