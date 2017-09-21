@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="temp/styles/styles.css">
 
 </head>
 
@@ -30,7 +30,7 @@
         </header>
 
         <div class="large-hero">
-            <img src="images/large-hero__image--small.jpeg" alt="table">
+            <img src="assets/images/large-hero__image--small.jpeg" alt="table">
             <div class="large-hero__text-content">
                 <h1 class="large-hero__title">Italian</h1>
                 <h2 class="large-hero__subtitle"> RESTAURANT</h2>
@@ -40,10 +40,10 @@
         <div class="info__text-block">
             <h3>Reservations</h3>
             <p class="info__text">Call us now to book a table in our restaurant. Calls must be in the same day as the reservation</p>
-            <button>BOOK A TABLE</button>
+            <button class="btn">BOOK A TABLE</button>
         </div>
 
-        <img src="images/info__reservations-image--small.jpeg" alt="">
+        <img src="assets/images/info__reservations-image--small.jpeg" alt="">
         <section id="about">
             <div class="info__text-block">
                 <h3>About</h3>
@@ -51,19 +51,19 @@
                     in Las Vegas. The restaurant now has a loyal following of its own, offering traditional Roman recipes passed down from Chef Luigi's family, as well as inventive Northern and Southern Italian preparations inspired by Chef Luigi's culinary
                     education and travels.</p>
             </div>
-            <img src="images/info__about-image--small.jpeg" alt="Italian restaurant">
+            <img src="assets/images/info__about-image--small.jpeg" alt="Italian restaurant">
         </section>
 
         <section id="specials">
             <h3>SPECIALITIES</h3>
-            <img src="images/specials__lasagna-image--small.jpg" alt="lasagna">
+            <img src="assets/images/specials__lasagna-image--small.jpg" alt="lasagna">
             <div class="specials__text-block">
                 <span class="menu-item__name">Lasagne</span>
                 <span class="menu-item__price">$22</span>
                 <span class="menu-item__description">Herby 12-hour slow-cooked oxtail & Chianti ragù layered with pasta, béchamel, mozzarella & Parmesan</span>
             </div>
 
-            <img src="images/specials__braciole-image--small.jpeg" alt="braciole">
+            <img src="assets/images/specials__braciole-image--small.jpeg" alt="braciole">
             <div class="specials__text-block">
                 <span class="menu-item__name">Braciole</span>
                 <span class="menu-item__price">$24</span>
@@ -71,7 +71,7 @@
                     herbs, slowly braised in our tomato sauce and served over fresh cavatelli pasta</span>
             </div>
 
-            <img src="images/specials__salad-image--small.jpg" alt="salad">
+            <img src="assets/images/specials__salad-image--small.jpg" alt="salad">
             <div class="specials__text-block">
                 <span class="menu-item__name">Insalate Tritata</span>
                 <span class="menu-item__price">$14</span>
@@ -80,7 +80,7 @@
                     cucumbers, handmade mozzarella, and balsamic vinaigrette</span>
             </div>
 
-            <img src="images/specials__spaghetti-image--small.jpg" alt="">
+            <img src="assets/images/specials__spaghetti-image--small.jpg" alt="">
             <div class="specials__text-block">
                 <span class="menu-item__name">Pasta Marinaro</span>
                 <span class="menu-item__price">$18</span>
@@ -191,6 +191,15 @@
     <!-- /wrapper  -->
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="menu.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".nav__burger").on("click", function() {
+                $(".nav__row").toggleClass("nav__row--open");
+            });
+
+        });
+    </script>
 </body>
 
 </html>
