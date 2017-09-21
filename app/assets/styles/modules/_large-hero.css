@@ -17,8 +17,13 @@
   color: #fff;
   font-size: 3em;
   margin: 0;
-      font-family: "Voyage Regular";
+  font-family: "Voyage Regular";
   text-align:center;
+
+ @mixin atSmall {
+      font-size: 10em;
+    }
+
 }
 
 .large-hero__subtitle {
@@ -26,4 +31,10 @@
   color: #fff;
   font-size: 1.0rem;
   margin-top: -10px;
+
+ @mixin atSmall {
+      font-size: 2em;
+      margin-top:-40px;
+    }
+
 }

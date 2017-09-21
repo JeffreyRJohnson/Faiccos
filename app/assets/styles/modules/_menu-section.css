@@ -9,16 +9,19 @@
     display: block;
 }
 
-.menu-section_list{
+.menu-section__list{
     float:none;
     width:90%;
-    margin: 30px 2% !important;
+    margin: 30px 2% 30px 2% !important;
+    @mixin atSmall{
+        
+    }
 }
 
-@media screen and (min-width:480px){
+@mixin atSmall{
 .menu-section__list{
     float: left;
-    width: 42%;
+    width: 44%;
     padding: 0;
     margin: 20px 0 20px 8%;
 }

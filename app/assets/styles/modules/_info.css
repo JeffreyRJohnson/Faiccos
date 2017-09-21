@@ -2,6 +2,10 @@
     text-align:center;
        box-sizing:border-box;
        padding:20px 20px;
+background-color:white;
+        @mixin atSmall {
+      padding:20px 40px 60px 40px;
+    }
 }
 
 .info__text{
@@ -9,3 +13,54 @@
     font-style: italic;
     font-size: 14px;
 }
+
+#reservations{
+   @mixin atLarge{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+background-color:white;
+position:relative;
+top:-30px;
+  display:flex;
+  flex-direction:row;
+  .info__text-block{
+    flex-basis: 50%;
+    
+  }
+  h3{
+    font-size:2em;
+  }
+ img{
+    flex-basis: 50%;
+    height:353px;
+  
+  }
+  }
+}
+
+
+
+#about{
+  @mixin atLarge{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+background-color:white;
+  display:flex;
+ position:relative;
+top:-40px;
+  .info__text-block{
+    flex-basis: 50%;
+
+  }
+  h3{
+    font-size:2em;
+  }
+   img{
+    flex-basis: 30%;
+
+  }
+  }
+}
+

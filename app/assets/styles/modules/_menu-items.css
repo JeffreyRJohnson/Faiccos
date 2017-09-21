@@ -17,7 +17,7 @@
     /* price line magic */
     position: relative;
     z-index: 1;
-    background: #fff;
+    background: $offwhite;
     padding-left: 15px;
     font-family: "Voyage Regular";
     font-size:2em;
