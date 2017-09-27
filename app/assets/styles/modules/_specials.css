@@ -2,16 +2,35 @@
   text-align:center;
        box-sizing:border-box;
        padding:20px 20px;
+       
 }
-
- @mixin atSmall {
 #specials ul{
 list-style-type: none;
-
+ @mixin atSmall {
+     width:100%;
+ }
 }
+
+
+
+
 #specials ul li{
-   float: left;
-  padding:0 20px  0 0;
-   max-width: 46%;
+ @mixin atSmall {    
+width:100%
+ }
+   @mixin atMedium{
+    float: left;
+    width: 48%;
+    padding: 0;
+    margin:0 1% 0 1%;
+
+#specials ul li:nth-child(odd){
+    margin:0 1% 0 0;
+}
 }
     }
+
+
+
+
+ 

@@ -19,10 +19,13 @@
    top:0;
 @mixin atMedium{
 height:40px;
-top:80px;
+top:10px;
 left:-3%;
 background:none;
 text-align:center;
+}
+@mixin atLarge{
+    top:80px;
 }
 }
 
