@@ -2,16 +2,65 @@
   text-align:center;
        box-sizing:border-box;
        padding:20px 20px;
+       @mixin atLarge{
+padding:0;
+height:200px;
+       }
        
 }
+
+#specials{
+    background-color:white;
+      @mixin atLarge{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+   display:flex;  
+      }
+.menu-item__name{
+    float: none;
+    top:10px;   
+}
+
+.menu-item__price{
+    display:none;
+}
+
+.menu-item__description{
+    font-style: italic;
+    font-size: 14px;
+    // margin-top: 20px;
+    border: none;
+    top: 20px;
+}
+.menu-item__price--lg-screen{
+    color:goldenrod;
+    float: none;
+    font-weight: bold;
+    position: relative;
+    bottom:-40px;
+    /* needs work price on bottom*/
+}
+
+
+}
+
 #specials ul{
 list-style-type: none;
+display:inline-block;
  @mixin atSmall {
      width:100%;
  }
+ @mixin atLarge{
+     display:flex;
+ }
 }
 
-
+#specials img{
+    @mixin atLarge{
+      height:200px;
+    }
+}
 
 
 #specials ul li{
@@ -22,10 +71,21 @@ width:100%
     float: left;
     width: 48%;
     padding: 0;
-    margin:0 1% 0 1%;
+    margin:0 1% 0 1%;{
+        @mixin atLarge{
+            margin:0;
+            flex-direction:column;
+            
+        }
+    }
 
 #specials ul li:nth-child(odd){
     margin:0 1% 0 0;
+    @mixin atLarge{
+        margin:0;
+        flex-direction:column;
+        
+    }
 }
 }
     }
