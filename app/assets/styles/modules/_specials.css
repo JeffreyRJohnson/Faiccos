@@ -1,3 +1,25 @@
+.parallax{
+    background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
+  
+  
+   z-index:5;
+    }
+    .parallax-inner{
+
+height:600px;
+color:white;
+text-align:center;
+//  padding-top:10%;
+h2{
+    color:white;
+    position:relative;
+    top:50%;
+    font-size:3em;
+    font-weight:700;
+}
+    }
+
+
 .specials__text-block{
   text-align:center;
        box-sizing:border-box;
@@ -9,6 +31,12 @@ height:200px;
        
 }
 
+.specials-heading{
+     @mixin atLarge{
+     display:none;
+     }
+}
+
 #specials{
     background-color:white;
       @mixin atLarge{
@@ -16,6 +44,12 @@ height:200px;
     margin-left:10%;
     margin-right:10%;
    display:flex;  
+   position:relative;
+   top:-20px;
+margin-bottom:-40px;
+      }
+      #specials h3{
+          display:none;
       }
 .menu-item__name{
     float: none;
@@ -53,6 +87,7 @@ display:inline-block;
  }
  @mixin atLarge{
      display:flex;
+     margin-bottom:-4px;
  }
 }
 
