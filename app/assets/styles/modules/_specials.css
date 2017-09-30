@@ -1,8 +1,10 @@
 .parallax{
+    &.lazyloaded{
     background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
   
   
    z-index:5;
+    }
     }
     .parallax-inner{
 

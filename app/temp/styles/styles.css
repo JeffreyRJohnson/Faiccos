@@ -510,12 +510,10 @@ background-color:white;
     //: 1px solid green;
     width: 33%;
   }
-}.parallax{
-    background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
-  
-  
-   z-index:5;
-    }.parallax-inner{
+}.parallax.lazyloaded{
+  background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
+  z-index:5;
+}.parallax-inner{
 
 height:600px;
 color:white;
@@ -645,12 +643,10 @@ display:inline-block;
     border-top: 1px solid #ddd;
     position: relative;
     top: -8px;
-}.parallax2{
-    background: url('../../assets/images/food-eating-potatoes-beer-8313.jpg')no-repeat fixed 25%;
-
-   z-index:6;
- 
-    }.parallax-inner2{
+}.parallax2.lazyloaded{
+  background: url('../../assets/images/food-eating-potatoes-beer-8313.jpg')no-repeat fixed 25%;
+  z-index:6;
+}.parallax-inner2{
 height:600px;
     }.menu-section__row{
     padding: 0 5% 0 9%;
