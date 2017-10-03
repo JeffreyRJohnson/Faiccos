@@ -440,6 +440,12 @@ margin-top:0;
     top: -20px;
     box-sizing: border-box;
     margin-bottom: -40px;
+    height: 580px;
+  }
+}@media (min-width: 1010px){.container img{
+    height: 290px;
+    padding: 0;
+    margin: 0;
   }
 }.info__text-block--reservations{
   text-align:center;
@@ -450,17 +456,6 @@ background-color:white;
   }
 }@media (min-width: 1010px){.info__text-block--reservations{
     //: 1px solid red;
-    height: 290px;
-    padding: 0;
-    margin: 0;
-  }
-}@media (min-width: 1010px){.info__image__reservations{
-    height: 290px;
-    padding: 0;
-    margin: 0;
-  }
-}@media (min-width: 1010px){.info__image__about{
-    //: 4px solid purple;
     height: 290px;
     padding: 0;
     margin: 0;
@@ -678,6 +673,15 @@ height:600px;
   color: #555;
 }.footer__link:hover{
   color:goldenrod;
+}.reveal-item {
+  opacity: 0;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}.reveal-item--is-visible {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 

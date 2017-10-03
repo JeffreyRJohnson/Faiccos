@@ -16,10 +16,6 @@ gulp.task('previewDist', function() {
     });
 });
 
-gulp.task('deleteDistFolder', ['icons'], function() {
-    return del("./docs");
-});
-
 gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
     var pathsToCopy = [
         './app/**/*',
@@ -36,7 +32,7 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 });
 
 gulp.task('optimizeImages', ['deleteDistFolder'], function() {
-    return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*'])
+    return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons/**/*'])
         .pipe(imagemin({
             progressive: true,
             interlaced: true,
