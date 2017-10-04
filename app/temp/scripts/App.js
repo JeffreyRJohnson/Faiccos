@@ -91,6 +91,11 @@
 
 	        this.menuIcon = (0, _jquery2.default)(".nav__burger");
 	        this.menuContent = (0, _jquery2.default)(".nav__row");
+	        this.reservationsLink = (0, _jquery2.default)("#reservations-link");
+	        this.aboutLink = (0, _jquery2.default)("#about-link");
+	        this.specialsLink = (0, _jquery2.default)("#specials-link");
+	        this.menuLink = (0, _jquery2.default)("#menu-section-link");
+	        this.desertLink = (0, _jquery2.default)("#deserts-link");
 	        this.events();
 	    }
 
@@ -98,11 +103,23 @@
 	        key: "events",
 	        value: function events() {
 	            this.menuIcon.click(this.toggleTheMenu.bind(this));
+	            this.reservationsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#reservations"), 4));
+	            this.aboutLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#about"), 3));
+	            this.specialsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#specials"), 3));
+	            this.menuLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#menu-section"), 2.68));
+	            this.desertLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#desert-menu"), 2.8));
 	        }
 	    }, {
 	        key: "toggleTheMenu",
 	        value: function toggleTheMenu() {
 	            this.menuContent.toggleClass("nav__row--open");
+	        }
+	    }, {
+	        key: "smoothScroll",
+	        value: function smoothScroll(navLink, placement) {
+	            (0, _jquery2.default)('html, body').animate({
+	                scrollTop: navLink.offset().top - (0, _jquery2.default)(window).height() / placement
+	            }, 2000);
 	        }
 	    }]);
 

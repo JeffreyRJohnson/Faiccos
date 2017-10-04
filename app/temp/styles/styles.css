@@ -972,7 +972,13 @@ display:inline-block;
     z-index: 1;
     background: #fff;
     padding-right: 15px;
-     
+}
+
+@media (min-width: 1010px) {
+
+  .menu-item__name {
+    background-color: #FDF9F3;
+  }
 }
 
 .menu-item__price{
@@ -1042,6 +1048,18 @@ height:600px;
   .menu-section__list:nth-child(odd) {
     margin: 20px 8% 20px 0;
   }
+}
+
+#desert-menu{
+    padding-bottom:100px;
+}
+
+#desert-menu h3{
+    padding:50px 0;
+}
+
+#menu-section h3{
+     padding:50px 0;
 }
 
 .footer{
