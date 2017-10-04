@@ -1050,8 +1050,22 @@ height:600px;
   }
 }
 
+@media (min-width: 1400px) {
+
+  #menu-section {
+    padding: 0 200px 0 200px;
+  }
+}
+
 #desert-menu{
     padding-bottom:100px;
+}
+
+@media (min-width: 1400px) {
+
+  #desert-menu {
+    padding: 0 200px 100px 200px;
+  }
 }
 
 #desert-menu h3{
@@ -1060,6 +1074,27 @@ height:600px;
 
 #menu-section h3{
      padding:50px 0;
+}
+
+.raw-pasta-image{
+    width:200px;
+     position:relative;
+    float:right;
+    top:-390px;
+}
+
+.side-pizza{
+  width:200px;
+     position:relative;
+    float:left;
+     top:200px;
+}
+
+.side-pasta{
+  width:200px;
+     position:relative;
+    float:right;
+     top:30px;
 }
 
 .footer{
