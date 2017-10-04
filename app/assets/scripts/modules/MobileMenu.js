@@ -1,7 +1,20 @@
-$(document).ready(function() {
+import $ from 'jquery';
 
-    $(".nav__burger").on("click", function() {
-        $(".nav__row").toggleClass("nav__row--open");
-    });
+class MobileMenu {
+    constructor() {
+        this.menuIcon = $(".nav__burger");
+        this.menuContent = $(".nav__row");
+        this.events();
+    }
 
-});
+    events() {
+        this.menuIcon.click(this.toggleTheMenu.bind(this));
+    }
+
+    toggleTheMenu() {
+        this.menuContent.toggleClass("nav__row--open");
+    }
+
+}
+
+export default MobileMenu;
