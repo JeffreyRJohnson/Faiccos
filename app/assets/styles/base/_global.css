@@ -1,116 +1,74 @@
-*{
-  margin:0;
-  padding:0;
+* {
+	margin: 0;
+	padding: 0;
 }
-
 body {
-  font-family: 'Roboto', sans-serif;
-   color: #333;
-   box-sizing:border-box;
-   background-color:$offwhite;
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	box-sizing: border-box;
+	background-color: $offwhite;
 }
-
-
 @font-face {
-font-family: "Voyage Regular";
-src: url("/assets/fonts/Voyage Regular.otf");
+	font-family: "Voyage Regular";
+	src: url("/assets/fonts/Voyage Regular.otf");
 }
-
 img {
- width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
+}
+h3 {
+	font-size: 3em;
+	font-family: "Voyage Regular";
+	text-align: center;
+	padding: 30px 0;
+}
+.wrapper-outer {
+	@mixin atLarge {
+		padding-top: 160px;
+		padding-bottom: 160px;
+		width: 100%;
+		height: 100%;
+	}
+}
+.wrapper-outer::after {
+	@mixin atLarge {
+		background: url("../../assets/images/pexels-photo-543733.jpeg") no-repeat fixed center;
+		content: "";
+		opacity: .7;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: fixed;
+		z-index: -1;
+	}
+}
+.wrapper {
+	max-width: 100%;
+	@mixin atLarge {
+		background: #fff;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: $offwhite;
+	}
+}
+button {
+	border: 2px solid goldenrod;
+	background: none;
+	color: goldenrod;
+	padding: 8px 12px;
+	cursor: pointer;
+	@mixin atSmall {
+		margin: 20px 0 10px 0;
+	}
+	@mixin atLarge {
+		margin: 0;
+		font-size: 12px;
+		font-weight: 700;
+		padding: 12px 28px;
+	}
 }
 
-h3{
-  font-size:3em;
-  font-family: "Voyage Regular";
-  text-align:center;
-  padding: 30px 0;
-}
-
-.wrapper-outer{
-    @mixin atLarge{
-      padding-top:160px;
-      padding-bottom:160px;
-      width:100%;
-      height:100%;
-        // background: url("../../assets/images/pexels-photo-543733.jpeg") no-repeat fixed center;
-}
-}
-      
-
-.wrapper-outer::after{
-  @mixin atLarge{
-        background: url("../../assets/images/pexels-photo-543733.jpeg") no-repeat fixed center;
-
- content: "";
-  opacity: .7;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;  
-  }
-}
-
-.wrapper{
-  max-width:100%;
-  @mixin atLarge{
-      background:#fff;
-      width:80%;
-      margin-left:auto;
-      margin-right:auto;
-         background-color:$offwhite;
-      
-  }
-}
-/*
-.wrapper{
-  padding-top:80px;
-  padding-bottom:80px;
-  width:100%;
-  height:100%;
-}
-
-.wrapper::after{
-  background: url("../../assets/images/background-small.jpeg") no-repeat fixed center;
- content: "";
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;  
-  
-}
-
-
-.wrapper-inner{
-  background:#fff;
-  width:80%;
-  margin-left:auto;
-  margin-right:auto;
-
-}
-*/
-button{
-  border:2px solid goldenrod;
-  background:none;
-  color:goldenrod;
-  padding:8px 12px;
- cursor:pointer;
-
-  @mixin atSmall {
-    margin:20px 0 10px 0;
-}
-@mixin atLarge{
-  margin:0;
-  font-size:12px;
-  font-weight:700;
-  padding:12px 28px;
-}
-}
 
 

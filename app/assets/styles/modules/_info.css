@@ -1,93 +1,84 @@
-
-
-.info__text{
-  color: #555;
-    // font-style: italic;
-    font-size: 14px;
-    text-align:center;
-    padding:20px;
+.info__text {
+	color: #555;
+	// font-style: italic;
+	font-size: 14px;
+	text-align: center;
+	padding: 20px;
 }
-
-.container{
-
-  @mixin atLarge{
-    width:80%;
-    margin-left:10%;
-    margin-right:10%;
-   display:flex;
-  position:relative;
-   top:-20px;
-   box-sizing:border-box;
-   margin-bottom:-40px;
-   height:580px;
-}
-img{
-    @mixin atLarge{
+.container {
+	@mixin atLarge {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		display: flex;
+		position: relative;
+		top: -30px;
+		box-sizing: border-box;
+		margin-bottom: -70px;
+		height: 580px;
+  }	
+  @mixin atExtraLarge{
+    width:68%;
+    margin-left: 16%;
+    margin-right:16%;
+		
+  }
+	img {
+		    @mixin atLarge{
   height:290px;
   padding:0;
-  margin:0;
+margin:0;		
+		}
+	}
 }
+.info__text-block--reservations {
+	text-align: center;
+	padding: 40px 20px;
+	background-color: white;
+	@mixin atSmall {
+		padding: 20px 40px 60px 40px;
+	}
+	@mixin atLarge {
+		height: 290px;
+		padding: 0 20px;
+		margin: 0;
+	}
 }
+.info__text-block--about {
+	text-align: center;
+	padding: 40px 20px;
+	background-color: white;
+	@mixin atSmall {
+		padding: 20px 40px 60px 40px;
+	}
+	@mixin atLarge {
+		height: 290px;
+		padding: 0 20px;
+		margin: 0;
+	}
 }
-
-.info__text-block--reservations{
-  text-align:center;
-       padding:40px 20px;
-background-color:white;
-
-        @mixin atSmall {
-      padding:20px 40px 60px 40px;
-    }
-  @mixin atLarge{
-// border:1px solid red;
-  height:290px;
-padding:0 20px;
-  margin:0;
-  }
+#about {
+	display: flex;
+	flex-direction: column-reverse;
+	@mixin atLarge {
+		flex-direction: column;
+		width: 67%;
+	}
 }
-
-.info__text-block--about{
-  text-align:center;
-       padding:40px 20px;
-background-color:white;
-
-        @mixin atSmall {
-      padding:20px 40px 60px 40px;
-    }
-  @mixin atLarge{
-height:290px;
-// border:1px solid green;
-padding: 0 20px;
-margin:0;
+#reservations {
+	display: flex;
+	flex-direction: column;
+	@mixin atLarge {
+		flex-direction: column;
+		width: 33%;
+	}
 }
-
+#reservations h3 {
+	font-weight: 300;
 }
-
-
-#about{
-   display:flex;
-  flex-direction:column-reverse;
-   @mixin atLarge{
-  flex-direction:column; 
-width:67%;
-   }
-}
-#reservations{
-   display:flex;
-  flex-direction:column;
-   @mixin atLarge{
-  flex-direction:column;
-  // border:1px solid green;
-  width:33%;
-   }
+#about h3 {
+	font-weight: 300;
+	padding-top: 40px;
 }
 
-#reservations h3{
-  font-weight:300;
-}
-
-#about h3{
-  font-weight:300;
-  padding-top:40px;
-}
 

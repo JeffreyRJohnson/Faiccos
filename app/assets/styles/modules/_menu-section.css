@@ -1,102 +1,122 @@
-.parallax2{
-    &.lazyloaded{
-    background: url('../../assets/images/food-eating-potatoes-beer-8313.jpg')no-repeat fixed 25%;
+.parallax2 {
+	&.lazyloaded {
+		background: url('../../assets/images/food-eating-potatoes-beer-8313.jpg')no-repeat fixed 25%;
+		z-index: 6;
+	}
+}
+.parallax-inner2 {
+	height: 600px;
+}
+.menu-section__row {
+	padding: 0 5% 0 9%;
+	list-style-type: none;
+}
+.menu-section__row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.menu-section__list {
+	float: none;
+	width: 90%;
+	margin: 30px 2% 30px 2% !important;
+	@mixin atSmall {
+	}
+}
+@mixin atSmall {
+	.menu-section__list {
+		float: left;
+		width: 44%;
+		padding: 0;
+		margin: 20px 0 20px 8%;
+	}
+	.menu-section__list:nth-child(odd) {
+		margin: 20px 8% 20px 0;
+	}
+	.menu-section__list:nth-last-child() {
+		margin: 90px 8% 20px 0;
+	}
 
-   z-index:6;
-    }
-    }
-    .parallax-inner2{
-height:600px;
-    }
-
-
-.menu-section__row{
-    padding: 0 5% 0 9%;
-    list-style-type: none;
-    
+}
+#menu-section {
+	@mixin atExtraLarge {	
+	width:68%;
+    margin-left: 16%;
+    margin-right:16%;
+	}
+}
+#desert-menu {
+	padding-bottom: 100px;
+	@mixin atExtraLarge {
+		padding: 0 200px 100px 200px;
+	}
+}
+#desert-menu h3 {
+	padding: 50px 0;
+}
+#menu-section h3 {
+	padding: 50px 0;
+}
+.raw-pasta-image {
+	display: none;
+	@mixin atExtraLarge {
+		display: block;
+		width: 200px;
+		height: 240px;
+		position: relative;
+		float: right;
+		top: -390px;
+	}
+}
+.side-pizza {
+	display: none;
+	@mixin atExtraLarge {
+		display: block;
+		width: 200px;
+		height: 380px;
+		position: relative;
+		float: left;
+		top: 200px;
+	}
+}
+.side-pasta {
+	display: none;
+	@mixin atExtraLarge {
+		display: block;
+		width: 200px;
+		height: 300px;
+		position: relative;
+		float: right;
+		top: 30px;
+	}
 }
 
-.menu-section__row:after{
-    content: "";
-    clear: both;
-    display: block;
+hr{
+	display:none;
+	@mixin atExtraLarge {
+		display:block;
+width:40px;
+color:goldenrod;
+margin-left:auto;
+margin-right:auto;
+height:2px;
+background:goldenrod;
+border:none;
+margin-top:-40px;
+	}
 }
 
-.menu-section__list{
-    float:none;
-    width:90%;
-    margin: 30px 2% 30px 2% !important;
-    @mixin atSmall{
-        
-    }
-}
-
-@mixin atSmall{
-.menu-section__list{
-    float: left;
-    width: 44%;
-    padding: 0;
-    margin: 20px 0 20px 8%;
-}
-
-.menu-section__list:nth-child(odd){
-    margin: 20px 8% 20px 0;
-}
-}
-
-#menu-section{
-       @mixin atExtraLarge{
-        padding:0 200px 0 200px;
-    }
-}
-
-#desert-menu{
-    padding-bottom:100px;
-    @mixin atExtraLarge{
-        padding:0 200px 100px 200px;
-    }
+h4{
+    color:#999;
+    text-align:center;
+    font-weight:700;
+	margin-top:60px;
+	margin-bottom:60px;
+	font-size:1.4em;
 }
 
 #desert-menu h3{
-    padding:50px 0;
-}
-
-#menu-section h3{
-     padding:50px 0;
-}
-
-.raw-pasta-image{
-    display:none;
-    @mixin atExtraLarge{
-    display:block;
-    width:200px;
-    height:240px;
-    position:relative;
-    float:right;
-    top:-390px;
-}
-}
-
-.side-pizza{
-    display:none;
-    @mixin atExtraLarge{        
-    display:block;
-    width:200px;
-    height:380px;
-     position:relative;
-    float:left;
-     top:200px;
-
-}
-}
-.side-pasta{
-  display:none;
-    @mixin atExtraLarge{
-     display:block;
-    width:200px;
-    height:300px;
-     position:relative;
-    float:right;
-     top:30px;
-}
+	@mixin atLarge{
+		display:none;
+	}
 }

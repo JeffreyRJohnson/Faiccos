@@ -21,13 +21,12 @@
             <!-- primary nav -->
             <header>
                 <nav>
-                    <!-- <span>Italian</span><br>
-                    <span>-RESTAURANT<</span> -->
                     <i class="fa fa-bars nav__burger" aria-hidden="true"></i>
+                    <div class="nav__logo">Italian</div>
+
                     <ul class="nav__row">
                         <li class="nav__list"><a href="#reservations" class="nav__link" id="reservations-link">RESERVATIONS</a></li>
                         <i class="fa fa-circle" aria-hidden="true"></i>
-
                         <li class="nav__list"><a href="#about" class="nav__link" id="about-link">ABOUT</a></li>
                         <i class="fa fa-circle" aria-hidden="true"></i>
                         <li class="nav__list"><a href="#specials" class="nav__link" id="specials-link">OUR SPECIALITIES</a></li>
@@ -89,7 +88,7 @@ assets/images/large-hero__image--med.jpeg 800w" sizes="(max-width:480px) 480px,
                             <span class="menu-item__name">Lasagne</span>
                             <span class="menu-item__price">$22</span>
                             <span class="menu-item__description">Herby 12-hour slow-cooked oxtail & Chianti ragù layered with pasta, béchamel, mozzarella & Parmesan</span>
-                            <span class="menu-item__price--lg-screen">FROM $22</span>
+                            <span class="menu-item__price--lg-screen--top">FROM $22</span>
                         </div>
                         <img data-src="assets/images/specials__lasagna-image--small.jpg" class="lazyload reveal-item specials-reveal" alt="lasagna">
                     </li>
@@ -98,11 +97,10 @@ assets/images/large-hero__image--med.jpeg 800w" sizes="(max-width:480px) 480px,
                             <img data-src="assets/images/specials__braciole-image--small.jpeg" class="lazyload reveal-item specials-reveal" alt="braciole">
                         </picture>
                         <div class="specials__text-block specials-reveal">
-                            <span class="menu-item__name">Braciole</span>
+                            <span class="menu-item__name">Tramezzino</span>
                             <span class="menu-item__price">$24</span>
-                            <span class="menu-item__description">Flank steak stuffed with prosciutto, mozzarella, raisins, pignoli nuts, and 
-                    herbs, slowly braised in our tomato sauce and served over fresh cavatelli pasta</span>
-                            <span class="menu-item__price--lg-screen ">FROM $22</span>
+                            <span class="menu-item__description"> sun dried tomato, avocado, provolone cheese and basil garlic sauce </span>
+                            <span class="menu-item__price--lg-screen--bottom">FROM $24</span>
                         </div>
                     </li>
                     <li>
@@ -112,7 +110,7 @@ assets/images/large-hero__image--med.jpeg 800w" sizes="(max-width:480px) 480px,
                             <span class="menu-item__description">
                     Chopped arugula, romaine, tomatoes, red onions,         
                     cucumbers, handmade mozzarella, and balsamic vinaigrette</span>
-                            <span class="menu-item__price--lg-screen">FROM $22</span>
+                            <span class="menu-item__price--lg-screen--top">FROM $14</span>
                         </div>
                         <picture>
                             <img data-src="assets/images/specials__salad-image--small.jpg" class="lazyload reveal-item specials-reveal" alt="salad">
@@ -127,8 +125,8 @@ assets/images/large-hero__image--med.jpeg 800w" sizes="(max-width:480px) 480px,
                             <span class="menu-item__price">$18</span>
                             <span class="menu-item__description">An Avellinesi -
                     style fusilli with grilled portobello mushrooms and cherry  
-                    tomatoes tossed in handmade pignoli lemon basil pesto </span>
-                            <span class="menu-item__price--lg-screen">FROM $22</span>
+                    tomatoes</span>
+                            <span class="menu-item__price--lg-screen--bottom">FROM $18</span>
                         </div>
                     </li>
                 </ul>
@@ -143,6 +141,9 @@ assets/images/large-hero__image--med.jpeg 800w" sizes="(max-width:480px) 480px,
             <!-- menu section -->
             <section id="menu-section">
                 <h3>Menu</h3>
+                <hr>
+                <h4>FOOD & APERITIVES</h4>
+
                 <ul class="menu-section__row">
                     <li class="menu-section__list">
                         <span class="menu-item__name">Antipasti della Casa</span>
@@ -165,27 +166,36 @@ assets/images/large-hero__image--med.jpeg 800w" sizes="(max-width:480px) 480px,
                         <span class="menu-item__description ">Tomato sauce, handmade mozzarella, Italian sausage (choice of hot or 
                             sweet), peppers, onions, and EVOO</span>
                     </li>
-                    <li class="menu-section__list ">
-                        <span class="menu-item__name ">Vitello alla Parmigiana</span>
-                        <span class="menu-item__price ">$28</span>
-                        <span class="menu-item__description ">Veal Parmigiana 
+                    <li class="menu-section__list">
+                        <span class="menu-item__name">Vitello alla Parmigiana</span>
+                        <span class="menu-item__price">$28</span>
+                        <span class="menu-item__description">Veal Parmigiana 
                             -
                             Lightly breaded veal cutlet with our handmade seasoned 
                             breadcrumbs, pan seared, then topped with our marinara tomato sauce and 
                             fresh muenster cheese, served with a side of  spaghetti</span>
                     </li>
-                    <li class="menu-section__list ">
-                        <span class="menu-item__name ">Pollo al Taleggio </span>
-                        <span class="menu-item__price ">$21</span>
+                    <li class="menu-section__list">
+                        <span class="menu-item__name">Pollo al Taleggio </span>
+                        <span class="menu-item__price">$21</span>
                         <span class="menu-item__description ">Chicken cutlet breaded with handmade breadcrumbs, pan 
-                            seared in a white wine Italian herb sauce then topped with melted taleggio 
-                            cheese and prosciutto, served over a bed of sautéed spinach</span>
+                            seared in a white wine Italian herb sauce
+                        </span>
                     </li>
-                    <li class="menu-section__list ">
-                        <span class="menu-item__name ">Tagliatelle Fra'Diavolo</span>
-                        <span class="menu-item__price ">$24</span>
+                    <li class="menu-section__list">
+                        <span class="menu-item__name">Tagliatelle Fra'Diavolo</span>
+                        <span class="menu-item__price">$24</span>
                         <span class="menu-item__description ">Thin flat noodles with shrimp, clams, mussels, and calamari tossed in a spicy 
                             marinara sauce</span>
+                    </li>
+                    <li class="menu-section__list">
+                        <span class="menu-item__name">
+                                AUBERGINE PENNE ARRABBIATA
+                                
+                                
+                                </span>
+                        <span class="menu-item__price">$20</span>
+                        <span class="menu-item__description ">Fresh pasta with fiery tomato & garlic sauce, fried aubergine, olives & fresh chilli</span>
                     </li>
 
                 </ul>
@@ -193,6 +203,8 @@ assets/images/large-hero__image--med.jpeg 800w" sizes="(max-width:480px) 480px,
             <!-- desert menu -->
             <section id="desert-menu">
                 <h3>DESERTS</h3>
+                <h4>DESERTS</h4>
+
                 <ul class="menu-section__row ">
                     <li class="menu-section__list ">
                         <span class="menu-item__name ">TIRAMISU</span>
@@ -214,6 +226,11 @@ assets/images/large-hero__image--med.jpeg 800w" sizes="(max-width:480px) 480px,
                         <span class="menu-item__name ">SICILIAN RICOTTA</span>
                         <span class="menu-item__price ">$7</span>
                         <span class="menu-item__description ">cheesecake served with strawberries and a port wine reduction</span>
+                    </li>
+                    <li class="menu-section__list ">
+                        <span class="menu-item__name ">LEMON POLENTA CAKE</span>
+                        <span class="menu-item__price ">$7</span>
+                        <span class="menu-item__description ">Summer berry-rippled crème fraîche & lemon zest</span>
                     </li>
                 </ul>
             </section>
