@@ -55,7 +55,8 @@ margin-bottom:-40px;
       }
 .menu-item__name{
     float: none;
-    top:10px;   
+    top:10px;  
+    background:white; 
 }
 
 .menu-item__price{
@@ -63,11 +64,11 @@ margin-bottom:-40px;
 }
 
 .menu-item__description{
-    font-style: italic;
     font-size: 14px;
     // margin-top: 20px;
     border: none;
     top: 20px;
+    padding:20px;
 }
 .menu-item__price--lg-screen{
     color:goldenrod;

@@ -107,7 +107,9 @@ button{
 }
 @mixin atLarge{
   margin:0;
-  
+  font-size:12px;
+  font-weight:700;
+  padding:12px 28px;
 }
 }
 

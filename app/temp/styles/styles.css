@@ -541,6 +541,9 @@ button{
 
   button {
     margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 28px;
   }
 }
 
@@ -559,6 +562,10 @@ button{
   }
 }
 
+.nav__burger:hover{
+    color:#555;
+}
+
 .nav__row{
      overflow:hidden;
     background:#000;
@@ -567,6 +574,7 @@ button{
    z-index:5; 
    width:100%;
    top:0;
+    list-style-type:none;
 }
 
 @media (min-width: 800px) {
@@ -584,6 +592,8 @@ button{
 
   .nav__row {
     top: 180px;
+    font-weight: 700;
+    left: 8%;
   }
 }
 
@@ -598,7 +608,6 @@ margin-top:0;
     text-align:left;
     width:100%;
     margin:0;
-    list-style-type:none;
 }
 
 @media (min-width: 800px) {
@@ -608,6 +617,20 @@ margin-top:0;
     width: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.nav__row i{
+    display:none;
+}
+
+@media (min-width: 800px) {
+
+  .nav__row i {
+    display: inline;
+    font-size: 10px;
+    vertical-align: 30%;
+    color: #555;
   }
 }
 
@@ -625,6 +648,10 @@ margin-top:0;
   .nav__link {
     border: none;
   }
+}
+
+.nav__link:hover{
+    color:#555;
 }
 
 .large-hero {
@@ -675,8 +702,8 @@ margin-top:0;
 }
 
 .info__text{
-  color: #999;
-    font-style: italic;
+  color: #555;
+    // font-style: italic;
     font-size: 14px;
     text-align:center;
     padding:20px;
@@ -726,7 +753,7 @@ background-color:white;
   .info__text-block--reservations {
     //: 1px solid red;
     height: 290px;
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
   }
 }
@@ -750,7 +777,7 @@ background-color:white;
   .info__text-block--about {
     height: 290px;
     //: 1px solid green;
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
   }
 }
@@ -796,6 +823,15 @@ background-color:white;
     //: 1px solid green;
     width: 33%;
   }
+}
+
+#reservations h3{
+  font-weight:300;
+}
+
+#about h3{
+  font-weight:300;
+  padding-top:40px;
 }
 
 .parallax.lazyloaded{
@@ -869,6 +905,7 @@ text-align:center;
 #specials .menu-item__name{
   float: none;
   top:10px;
+  background:white;
 }
 
 #specials .menu-item__price{
@@ -876,11 +913,11 @@ text-align:center;
 }
 
 #specials .menu-item__description{
-  font-style: italic;
   font-size: 14px;
   // margin-top: 20px;
   border: none;
   top: 20px;
+  padding:20px;
 }
 
 #specials .menu-item__price--lg-screen{
@@ -998,7 +1035,6 @@ display:inline-block;
     clear: both;
     display: block;
     color: #999;
-    font-style: italic;
     font-size: 14px;
     /* price line magic */
     padding-top: 10px;
@@ -1077,24 +1113,51 @@ height:600px;
 }
 
 .raw-pasta-image{
-    width:200px;
-     position:relative;
-    float:right;
-    top:-390px;
+    display:none;
+}
+
+@media (min-width: 1400px) {
+
+  .raw-pasta-image {
+    display: block;
+    width: 200px;
+    height: 240px;
+    position: relative;
+    float: right;
+    top: -390px;
+  }
 }
 
 .side-pizza{
-  width:200px;
-     position:relative;
-    float:left;
-     top:200px;
+    display:none;
+}
+
+@media (min-width: 1400px) {
+
+  .side-pizza {
+    display: block;
+    width: 200px;
+    height: 380px;
+    position: relative;
+    float: left;
+    top: 200px;
+  }
 }
 
 .side-pasta{
-  width:200px;
-     position:relative;
-    float:right;
-     top:30px;
+  display:none;
+}
+
+@media (min-width: 1400px) {
+
+  .side-pasta {
+    display: block;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    float: right;
+    top: 30px;
+  }
 }
 
 .footer{

@@ -1,8 +1,8 @@
 
 
 .info__text{
-  color: #999;
-    font-style: italic;
+  color: #555;
+    // font-style: italic;
     font-size: 14px;
     text-align:center;
     padding:20px;
@@ -41,7 +41,7 @@ background-color:white;
   @mixin atLarge{
 // border:1px solid red;
   height:290px;
-padding:0;
+padding:0 20px;
   margin:0;
   }
 }
@@ -57,7 +57,7 @@ background-color:white;
   @mixin atLarge{
 height:290px;
 // border:1px solid green;
-padding: 0;
+padding: 0 20px;
 margin:0;
 }
 
@@ -80,5 +80,14 @@ width:67%;
   // border:1px solid green;
   width:33%;
    }
+}
+
+#reservations h3{
+  font-weight:300;
+}
+
+#about h3{
+  font-weight:300;
+  padding-top:40px;
 }
 

@@ -66,22 +66,37 @@ height:600px;
 }
 
 .raw-pasta-image{
+    display:none;
+    @mixin atExtraLarge{
+    display:block;
     width:200px;
-     position:relative;
+    height:240px;
+    position:relative;
     float:right;
     top:-390px;
 }
+}
 
 .side-pizza{
-  width:200px;
+    display:none;
+    @mixin atExtraLarge{        
+    display:block;
+    width:200px;
+    height:380px;
      position:relative;
     float:left;
      top:200px;
-}
 
+}
+}
 .side-pasta{
-  width:200px;
+  display:none;
+    @mixin atExtraLarge{
+     display:block;
+    width:200px;
+    height:300px;
      position:relative;
     float:right;
      top:30px;
+}
 }

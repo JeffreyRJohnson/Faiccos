@@ -9,6 +9,10 @@
 }
 }
 
+.nav__burger:hover{
+    color:#555;
+}
+
 .nav__row{
      overflow:hidden;
     background:#000;
@@ -17,6 +21,7 @@
    z-index:5; 
    width:100%;
    top:0;
+    list-style-type:none;
 @mixin atMedium{
 height:40px;
 top:10px;
@@ -26,6 +31,9 @@ text-align:center;
 }
 @mixin atLarge{
     top:180px;
+    font-weight:700;
+    left:8%;
+   
 }
 }
 
@@ -40,14 +48,23 @@ margin-top:0;
     text-align:left;
     width:100%;
     margin:0;
-    list-style-type:none;
        @mixin atMedium{
        display:inline-block;
          width:auto;
          margin-left:auto;
          margin-right:auto;
-       
-   }
+
+       }
+}
+
+.nav__row i{
+    display:none;
+    @mixin atMedium{
+        display:inline;
+    font-size:10px;
+    vertical-align:30%;
+    color:#555;
+}
 }
 
 .nav__link{ 
@@ -59,7 +76,12 @@ margin-top:0;
     text-decoration:none;
        @mixin atMedium{
        border:none; 
+       
    }
+}
+
+.nav__link:hover{
+    color:#555;
 }
 
 
