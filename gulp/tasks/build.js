@@ -16,6 +16,10 @@ gulp.task('previewDist', function() {
     });
 });
 
+gulp.task('deleteDistFolder', function() {
+    return del("./docs");
+});
+
 gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
     var pathsToCopy = [
         './app/**/*',
