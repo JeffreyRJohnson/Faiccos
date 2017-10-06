@@ -1,8 +1,10 @@
 .parallax2 {
-	&.lazyloaded {
+	display:none;	
+		@mixin atMedium{
+			display:block;
 		background: url('../../assets/images/food-eating-potatoes-beer-8313.jpg')no-repeat fixed 25%;
 		z-index: 6;
-	}
+}
 }
 .parallax-inner2 {
 	height: 600px;
@@ -21,8 +23,12 @@
 	width: 90%;
 	margin: 30px 2% 30px 2% !important;
 	@mixin atSmall {
+
 	}
 }
+
+
+
 @mixin atSmall {
 	.menu-section__list {
 		float: left;
@@ -93,7 +99,7 @@
 
 hr{
 	display:none;
-	@mixin atExtraLarge {
+	@mixin atLarge {
 		display:block;
 width:40px;
 color:goldenrod;
@@ -102,7 +108,7 @@ margin-right:auto;
 height:2px;
 background:goldenrod;
 border:none;
-margin-top:-40px;
+margin-top:-20px;
 	}
 }
 
@@ -112,11 +118,5 @@ h4{
     font-weight:700;
 	margin-top:60px;
 	margin-bottom:60px;
-	font-size:1.4em;
-}
-
-#desert-menu h3{
-	@mixin atLarge{
-		display:none;
-	}
+	font-size:1.3em;
 }

@@ -106,7 +106,7 @@
 	            this.reservationsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#reservations"), 4));
 	            this.aboutLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#about"), 3));
 	            this.specialsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#specials"), 3));
-	            this.menuLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#menu-section"), 2.68));
+	            this.menuLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#menu-section"), 1250));
 	            this.desertLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#desert-menu"), 2.8));
 	        }
 	    }, {

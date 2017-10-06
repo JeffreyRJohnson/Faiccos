@@ -21,6 +21,7 @@ h3 {
 	font-family: "Voyage Regular";
 	text-align: center;
 	padding: 30px 0;
+	font-weight:300;
 }
 .wrapper-outer {
 	@mixin atLarge {
@@ -53,22 +54,7 @@ h3 {
 		background-color: $offwhite;
 	}
 }
-button {
-	border: 2px solid goldenrod;
-	background: none;
-	color: goldenrod;
-	padding: 8px 12px;
-	cursor: pointer;
-	@mixin atSmall {
-		margin: 20px 0 10px 0;
-	}
-	@mixin atLarge {
-		margin: 0;
-		font-size: 12px;
-		font-weight: 700;
-		padding: 12px 28px;
-	}
-}
+
 
 
 

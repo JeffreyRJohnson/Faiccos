@@ -42,9 +42,13 @@
 		text-align: center;
 	}
 	@mixin atLarge {
-		top: 200px;
+		top: 180px;
 		font-weight: 700;
-		left: 18%;
+		left:1%;
+	}
+	@mixin atExtraLarge{
+		top: 200px;
+		left: 12%;
 	}
 }
 .nav__row--open {

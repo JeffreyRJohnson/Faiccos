@@ -448,6 +448,7 @@ h3 {
 	font-family: "Voyage Regular";
 	text-align: center;
 	padding: 30px 0;
+	font-weight:300;
 }
 
 @media (min-width: 1010px) {
@@ -487,31 +488,6 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     background-color: #FDF9F3;
-  }
-}
-
-button {
-	border: 2px solid goldenrod;
-	background: none;
-	color: goldenrod;
-	padding: 8px 12px;
-	cursor: pointer;
-}
-
-@media (min-width: 481px) {
-
-  button {
-    margin: 20px 0 10px 0;
-  }
-}
-
-@media (min-width: 1010px) {
-
-  button {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 12px 28px;
   }
 }
 
@@ -576,9 +552,17 @@ button {
 @media (min-width: 1010px) {
 
   .nav__row {
-    top: 200px;
+    top: 180px;
     font-weight: 700;
-    left: 18%;
+    left: 1%;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .nav__row {
+    top: 200px;
+    left: 12%;
   }
 }
 
@@ -749,6 +733,50 @@ button {
   }
 }
 
+@media (min-width: 1400px) {
+
+  .info__text-block--reservations {
+    height: 290px;
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+
+button {
+	border: 2px solid goldenrod;
+	background: none;
+	color: goldenrod;
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+@media (min-width: 481px) {
+
+  button {
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  button {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 28px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  button {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 28px;
+  }
+}
+
 .info__text-block--about {
 	text-align: center;
 	padding: 40px 20px;
@@ -813,24 +841,57 @@ button {
   }
 }
 
-#reservations h3 {
-	font-weight: 300;
+@media (min-width: 1010px) {
+
+  #reservations h3 {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #reservations h3 {
+    padding-top: 40px;
+  }
 }
 
 #about h3 {
-	font-weight: 300;
 	padding-top: 40px;
 }
 
-.parallax.lazyloaded {
-  background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
-  z-index: 5;
+@media (min-width: 1010px) {
+
+  #about h3 {
+    padding: 20px 0 0 0;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #about h3 {
+    padding-top: 40px;
+  }
+}
+
+.parallax {
+	display:none;
+}
+
+@media (min-width: 800px) {
+
+  .parallax {
+    display: block;
+    background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
+    z-index: 5;
+  }
 }
 
 .parallax-inner {
 	height: 600px;
 	color: white;
 	text-align: center;
+	z-index:5;
 	//  padding-top: 10%;
 }
 
@@ -857,7 +918,11 @@ button {
   }
 }
 
-@media (min-width: 1010px) {
+.specials-heading {
+	background:white;
+}
+
+@media (min-width: 800px) {
 
   .specials-heading {
     display: none;
@@ -898,12 +963,26 @@ button {
 
 #specials .menu-item__name {
   float: none;
-  top: 50px;
+  top: 0px;
   background: white;
   font-size:1.2em;
   font-weight:700;
   text-transform:uppercase;
   color:black;
+}
+
+@media (min-width: 1010px) {
+
+  #specials .menu-item__name {
+    top: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #specials .menu-item__name {
+    top: 50px;
+  }
 }
 
 #specials .menu-item__price {
@@ -914,24 +993,107 @@ button {
   font-size: 14px;
   // margin-top: 20px;
   border: none;
-  top: 50px;
+  top: 0;
   padding: 20px 50px;
 }
 
-#specials .menu-item__price--lg-screen--top {
-  color: goldenrod;
-  float: none;
-  font-weight: bold;
-  position: relative;
-  bottom: -50px;/* needs work price on bottom*/
+@media (min-width: 1010px) {
+
+  #specials .menu-item__description {
+    top: 20px;
+    padding: 20px;
+  }
 }
 
-#specials .menu-item__price--lg-screen--bottom {
+@media (min-width: 1400px) {
+
+  #specials .menu-item__description {
+    top: 50px;
+  }
+}
+
+#specials .menu-item__price--lasagna {
   color: goldenrod;
   float: none;
   font-weight: bold;
   position: relative;
-  bottom: -60px;/* needs work price on bottom*/
+}
+
+@media (min-width: 1010px) {
+
+  #specials .menu-item__price--lasagna {
+    bottom: -30px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #specials .menu-item__price--lasagna {
+    bottom: -30px;
+  }
+}
+
+#specials .menu-item__price--tramezzino {
+  color: goldenrod;
+  float: none;
+  font-weight: bold;
+  position: relative;
+}
+
+@media (min-width: 1010px) {
+
+  #specials .menu-item__price--tramezzino {
+    bottom: -50px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #specials .menu-item__price--tramezzino {
+    bottom: -60px;
+  }
+}
+
+#specials .menu-item__price--salad {
+  color: goldenrod;
+  float: none;
+  font-weight: bold;
+  position: relative;
+}
+
+@media (min-width: 1010px) {
+
+  #specials .menu-item__price--salad {
+    bottom: -20px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #specials .menu-item__price--salad {
+    bottom: -40px;
+  }
+}
+
+#specials .menu-item__price--spaghetti {
+  color: goldenrod;
+  float: none;
+  font-weight: bold;
+  position: relative;
+}
+
+@media (min-width: 1010px) {
+
+  #specials .menu-item__price--spaghetti {
+    bottom: -30px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  #specials .menu-item__price--spaghetti {
+    bottom: -46px;
+  }
 }
 
 #specials ul {
@@ -1042,16 +1204,23 @@ button {
 	display: block;
 	color: #999;
 	font-size: 14px;
-	/* price line magic */
 	padding-top: 10px;
 	border-top: 1px solid #ddd;
+	top: -8px;	
 	position: relative;
-	top: -8px;
 }
 
-.parallax2.lazyloaded {
-  background: url('../../assets/images/food-eating-potatoes-beer-8313.jpg')no-repeat fixed 25%;
-  z-index: 6;
+.parallax2 {
+	display:none;
+}
+
+@media (min-width: 800px) {
+
+  .parallax2 {
+    display: block;
+    background: url('../../assets/images/food-eating-potatoes-beer-8313.jpg')no-repeat fixed 25%;
+    z-index: 6;
+  }
 }
 
 .parallax-inner2 {
@@ -1175,7 +1344,7 @@ hr{
 	display:none;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1010px) {
 
   hr {
     display: block;
@@ -1186,7 +1355,7 @@ hr{
     height: 2px;
     background: goldenrod;
     border: none;
-    margin-top: -40px;
+    margin-top: -20px;
   }
 }
 
@@ -1196,14 +1365,7 @@ h4{
     font-weight:700;
 	margin-top:60px;
 	margin-bottom:60px;
-	font-size:1.4em;
-}
-
-@media (min-width: 1010px) {
-
-  #desert-menu h3 {
-    display: none;
-  }
+	font-size:1.3em;
 }
 
 .footer {

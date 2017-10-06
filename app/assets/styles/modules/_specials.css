@@ -1,6 +1,8 @@
 .parallax {
-	&.lazyloaded {
-		background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
+	display:none;	
+		@mixin atMedium{
+			display:block;
+		 background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
 		z-index: 5;
 	}
 }
@@ -8,6 +10,7 @@
 	height: 600px;
 	color: white;
 	text-align: center;
+	z-index:5;
 	//  padding-top: 10%;
 	h2 {
 		color: white;
@@ -29,7 +32,8 @@
 	}
 }
 .specials-heading {
-	@mixin atLarge {
+	background:white;
+	@mixin atMedium {
 		display: none;
 	}
 }
@@ -55,12 +59,18 @@
 	}
 	.menu-item__name {
 		float: none;
-		top: 50px;
+		top: 0px;
 		background: white;
         font-size:1.2em;
         font-weight:700;
         text-transform:uppercase;
         color:black;
+		@mixin atLarge{
+			top:20px;
+		}
+		@mixin atExtraLarge{
+			top:50px;
+		}
 	}
 	.menu-item__price {
 		display: none;
@@ -69,24 +79,63 @@
 		font-size: 14px;
 		// margin-top: 20px;
 		border: none;
-		top: 50px;
+		top: 0;
 		padding: 20px 50px;
+		@mixin atLarge{
+			top:20px;
+			padding:20px;
+		}
+		@mixin atExtraLarge{
+			top:50px;
+		}
 	}
-	.menu-item__price--lg-screen--top {
+	.menu-item__price--lasagna {
 		color: goldenrod;
 		float: none;
 		font-weight: bold;
 		position: relative;
-		bottom: -50px;
-		/* needs work price on bottom*/
+		@mixin atLarge{
+			bottom:-30px; 
+		}
+		@mixin atExtraLarge{
+			bottom:-30px;
+		}
 	}
-    .menu-item__price--lg-screen--bottom {
+    .menu-item__price--tramezzino {
 		color: goldenrod;
 		float: none;
 		font-weight: bold;
 		position: relative;
-		bottom: -60px;
-		/* needs work price on bottom*/
+		@mixin atLarge{
+			bottom:-50px;
+		}
+		@mixin atExtraLarge{
+			bottom: -60px;
+		}
+	}
+	.menu-item__price--salad {
+		color: goldenrod;
+		float: none;
+		font-weight: bold;
+		position: relative;
+		@mixin atLarge{
+			bottom: -20px;
+		}
+		@mixin atExtraLarge{
+			bottom: -40px;
+		}
+	}
+	.menu-item__price--spaghetti {
+		color: goldenrod;
+		float: none;
+		font-weight: bold;
+		position: relative;
+		@mixin atLarge{
+			bottom:-30px;
+		}
+		@mixin atExtraLarge{
+			bottom: -46px;
+		}
 	}
 }
 

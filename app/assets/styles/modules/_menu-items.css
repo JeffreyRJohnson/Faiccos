@@ -23,14 +23,20 @@
 	font-family: "Voyage Regular";
 	font-size: 2em;
 }
+
 .menu-item__description {
 	clear: both;
 	display: block;
 	color: #999;
 	font-size: 14px;
-	/* price line magic */
 	padding-top: 10px;
 	border-top: 1px solid #ddd;
+	top: -8px;	
 	position: relative;
-	top: -8px;
 }
+
+
+
+
+
+

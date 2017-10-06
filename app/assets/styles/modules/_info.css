@@ -43,7 +43,36 @@ margin:0;
 		padding: 0 20px;
 		margin: 0;
 	}
+	@mixin atExtraLarge{
+		height: 290px;
+		padding: 0 20px;
+		margin:0;
+	}
 }
+
+button {
+	border: 2px solid goldenrod;
+	background: none;
+	color: goldenrod;
+	padding: 8px 12px;
+	cursor: pointer;
+	@mixin atSmall {
+		margin: 20px 0 10px 0;
+	}
+	@mixin atLarge {
+		margin:0;
+		font-size: 12px;
+		font-weight: 700;
+		padding: 12px 28px;
+	}
+	@mixin atExtraLarge{
+		margin: 0;
+		font-size: 12px;
+		font-weight: 700;
+		padding: 12px 28px;
+	}
+}
+
 .info__text-block--about {
 	text-align: center;
 	padding: 40px 20px;
@@ -74,11 +103,22 @@ margin:0;
 	}
 }
 #reservations h3 {
-	font-weight: 300;
+	@mixin atLarge{
+		padding:20px 0;
+	}
+	@mixin atExtraLarge{
+		padding-top:40px;
+	}
 }
 #about h3 {
-	font-weight: 300;
 	padding-top: 40px;
+	@mixin atLarge{
+		padding:20px 0 0 0;
+		margin-top:10px;
+	}
+	@mixin atExtraLarge{
+		padding-top:40px;
+	}
 }
 
 
