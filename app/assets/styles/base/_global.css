@@ -13,10 +13,10 @@ body {
 	src: url("/assets/fonts/Voyage Regular.otf");
 	src:
 	url ("/assets/fonts/voyage_regular.woff"),
-    url('voyage_regular-webfont.eot'),
-    url('voyage_regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('voyage_regular-webfont.ttf') format('truetype'),
-    url('voyage_regular-webfont.svg#voyageregular') format('svg');
+    url('/assets/fonts/voyage_regular-webfont.eot'),
+    url('/assets/fonts/voyage_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/voyage_regular-webfont.ttf') format('truetype'),
+    url('/assets/fonts/voyage_regular-webfont.svg#voyageregular') format('svg');
 }
 img {
 	width: 100%;
