@@ -670,7 +670,6 @@ h3 {
 
 .info__text {
 	color: #555;
-	// font-style: italic;
 	font-size: 14px;
 	text-align: center;
 	padding: 20px;
@@ -899,7 +898,6 @@ button {
     color: white;
     text-align: center;
     z-index: 5;
-    //: 10%;
   }
 
   .parallax-inner h2 {
@@ -1194,7 +1192,6 @@ button {
 	float: left;
 	color: #555;
 	font-weight: bold;
-	/* price line magic */
 	position: relative;
 	z-index: 1;
 	background: #fff;
@@ -1212,7 +1209,6 @@ button {
 	float: right;
 	color: goldenrod;
 	font-weight: bold;
-	/* price line magic */
 	position: relative;
 	z-index: 1;
 	background: #FDF9F3;

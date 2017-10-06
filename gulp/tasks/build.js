@@ -16,7 +16,7 @@ gulp.task('previewDist', function() {
     });
 });
 
-gulp.task('deleteDistFolder', function() {
+gulp.task('deleteDistFolder', ['icons'], function() {
     return del("./docs");
 });
 
@@ -36,7 +36,7 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 });
 
 gulp.task('optimizeImages', ['deleteDistFolder'], function() {
-    return gulp.src(['./app/assets/images/**/*'])
+    return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*'])
         .pipe(imagemin({
             progressive: true,
             interlaced: true,
@@ -52,6 +52,7 @@ gulp.task('useminTrigger', ['deleteDistFolder'], function() {
 gulp.task('usemin', ['styles', 'scripts'], function() {
     return gulp.src("./app/index.html")
         .pipe(usemin({
+
             css: [function() { return rev() }, function() { return cssnano() }],
             js: [function() { return rev() }, function() { return uglify() }]
         }))

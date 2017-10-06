@@ -2,7 +2,6 @@
 	float: left;
 	color: #555;
 	font-weight: bold;
-	/* price line magic */
 	position: relative;
 	z-index: 1;
 	background: #fff;
@@ -15,7 +14,6 @@
 	float: right;
 	color: goldenrod;
 	font-weight: bold;
-	/* price line magic */
 	position: relative;
 	z-index: 1;
 	background: $offwhite;
