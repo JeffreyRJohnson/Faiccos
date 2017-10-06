@@ -1,8 +1,8 @@
 .parallax2 {
 	display:none;	
-		@mixin atMedium{
+		@mixin atLarge{
 			display:block;
-		background: url('../../assets/images/food-eating-potatoes-beer-8313.jpg')no-repeat fixed 25%;
+		background: url('../../assets/images/parallax2.jpg')no-repeat fixed 25%;
 		z-index: 6;
 }
 }

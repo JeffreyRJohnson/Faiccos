@@ -33,7 +33,7 @@ h3 {
 }
 .wrapper-outer::after {
 	@mixin atLarge {
-		background: url("../../assets/images/pexels-photo-543733.jpeg") no-repeat fixed center;
+		background: url("../../assets/images/background.jpeg") no-repeat fixed center;
 		content: "";
 		opacity: .7;
 		top: 0;

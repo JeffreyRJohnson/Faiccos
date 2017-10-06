@@ -464,7 +464,7 @@ h3 {
 @media (min-width: 1010px) {
 
   .wrapper-outer::after {
-    background: url("../../assets/images/pexels-photo-543733.jpeg") no-repeat fixed center;
+    background: url("../../assets/images/background.jpeg") no-repeat fixed center;
     content: "";
     opacity: .7;
     top: 0;
@@ -878,30 +878,38 @@ button {
 	display:none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
   .parallax {
     display: block;
-    background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
+    background: url('../../assets/images/parallax1.jpeg')no-repeat fixed 50%;
     z-index: 5;
   }
 }
 
 .parallax-inner {
-	height: 600px;
-	color: white;
-	text-align: center;
-	z-index:5;
-	//  padding-top: 10%;
+	display:none;
 }
 
-.parallax-inner h2 {
-  color: white;
-  position: relative;
-  top: 50%;
-  font-size: 2.5em;
-  font-weight: 900;
-  letter-spacing:6px;
+@media (min-width: 1010px) {
+
+  .parallax-inner {
+    display: block;
+    height: 600px;
+    color: white;
+    text-align: center;
+    z-index: 5;
+    //: 10%;
+  }
+
+  .parallax-inner h2 {
+    color: white;
+    position: relative;
+    top: 50%;
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 6px;
+  }
 }
 
 .specials__text-block {
@@ -910,10 +918,16 @@ button {
 	padding: 20px 20px;
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 800px) {
 
   .specials__text-block {
     padding: 0;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  .specials__text-block {
     height: 240px;
   }
 }
@@ -923,6 +937,14 @@ button {
 }
 
 @media (min-width: 800px) {
+
+  .specials-heading {
+    display: block;
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 1010px) {
 
   .specials-heading {
     display: none;
@@ -1214,11 +1236,11 @@ button {
 	display:none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
   .parallax2 {
     display: block;
-    background: url('../../assets/images/food-eating-potatoes-beer-8313.jpg')no-repeat fixed 25%;
+    background: url('../../assets/images/parallax2.jpg')no-repeat fixed 25%;
     z-index: 6;
   }
 }

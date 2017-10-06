@@ -1,12 +1,15 @@
 .parallax {
 	display:none;	
-		@mixin atMedium{
+		@mixin atLarge{
 			display:block;
-		 background: url('../../assets/images/pexels-photo-326278.jpeg')no-repeat fixed 50%;
+		 background: url('../../assets/images/parallax1.jpeg')no-repeat fixed 50%;
 		z-index: 5;
 	}
 }
 .parallax-inner {
+	display:none;
+	@mixin atLarge{
+		display:block;
 	height: 600px;
 	color: white;
 	text-align: center;
@@ -21,20 +24,27 @@
         letter-spacing:6px;
 	}
 }
-
+}
 .specials__text-block {
 	text-align: center;
 	box-sizing: border-box;
 	padding: 20px 20px;
-	@mixin atLarge {
+	@mixin atMedium{
 		padding: 0;
+	}
+	@mixin atLarge {
+		
 		height: 240px;
 	}
 }
 .specials-heading {
 	background:white;
 	@mixin atMedium {
-		display: none;
+		display: block;
+		padding:60px 0;
+	}
+	@mixin atLarge{
+		display:none;
 	}
 }
 
