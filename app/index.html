@@ -28,7 +28,7 @@
                     <div class="nav__logo">Italian</div>
 
                     <ul class="nav__row">
-                        <li class="nav__list"><a href="#reservations" class="nav__link" id="reservations-link">RESERVATIONS</a></li>
+                        <li class="nav__list"><a href="#reservations" class="nav__link open-modal" id="reservations-link">RESERVATIONS</a></li>
                         <i class="fa fa-circle" aria-hidden="true"></i>
                         <li class="nav__list"><a href="#about" class="nav__link" id="about-link">ABOUT</a></li>
                         <i class="fa fa-circle" aria-hidden="true"></i>
@@ -40,6 +40,8 @@
                         <i class="fa fa-circle" aria-hidden="true"></i>
                         <li class="nav__list"><a href="#footer" class="nav__link">CONTACT</a></li>
                         <i class="fa fa-circle" aria-hidden="true"></i>
+                        <li>Italian Restaurant <br> 2399 Some Street <br> Sometown XS, 66543 <br> (555)555-5555
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -61,7 +63,7 @@
                     <div class="info__text-block--reservations">
                         <h3>Reservations</h3>
                         <p class="info__text">Call us now to book a table in our restaurant. Calls must be in the same day as the reservation.</p>
-                        <button>BOOK A TABLE</button>
+                        <button class="open-modal">BOOK A TABLE</button>
                     </div>
                     <img data-src="assets/images/Italian-Restaurant-tables.jpeg" class="info__image__reservations lazyload reveal-item" alt="Italian Restaurant tables">
                 </section>
@@ -254,6 +256,22 @@
             <!-- /wrapper  -->
         </div>
         <!-- wrapper outer -->
+
+        <div class="modal">
+            <i class="fa fa-window-close modal__close" aria-hidden="true"></i>
+            <div class="modal__inner">
+                <h3>Reservations</h3>
+                Saturday October 5th 2017 <br>
+                <label for="name">name:</label>
+                <input type="text" name="name" required> <br>
+                <label for="time">time:</label>
+                <input type="time" name="time" min="18:00" max="22:00" required> <br>
+                <label for="guests">guests: </label>
+                <input type="number" name="guests" required> <br>
+                <input type="submit" value="Reserve">
+            </div>
+        </div>
+
         <!-- build:js assets/scripts/App.js -->
         <script src="/temp/scripts/App.js "></script>
         <!-- endbuild -->

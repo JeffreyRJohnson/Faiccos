@@ -4,8 +4,9 @@
 	top: 20px;
 	right: 20px;
 	z-index: 8;
+	cursor:pointer;
 	&:hover {
-		color: #555;
+		color: goldenrod;
 	}
 	@mixin atMedium {
 		display: none;
@@ -89,7 +90,7 @@
 	}
 }
 .nav__link:hover {
-	color: #555;
+	color:goldenrod;
 }
 
 

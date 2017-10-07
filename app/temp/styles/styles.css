@@ -437,7 +437,7 @@ body {
 	font-family: "Voyage Regular";
 	src: url ('/assets/fonts/voyage_regular.woff');
 	src:
-    url("/assets/fonts/Voyage Regular.otf"),
+    url('/assets/fonts/Voyage Regular.otf'),
     url('/assets/fonts/voyage_regular-webfont.eot'),
     url('/assets/fonts/voyage_regular-webfont.eot?#iefix') format('embedded-opentype'),
     url('/assets/fonts/voyage_regular-webfont.ttf') format('truetype'),
@@ -503,10 +503,11 @@ h3 {
 	top: 20px;
 	right: 20px;
 	z-index: 8;
+	cursor:pointer;
 }
 
 .nav__burger:hover {
-  color: #555;
+  color: goldenrod;
 }
 
 @media (min-width: 800px) {
@@ -626,7 +627,7 @@ h3 {
 }
 
 .nav__link:hover {
-	color: #555;
+	color:goldenrod;
 }
 
 .large-hero {
@@ -1406,6 +1407,47 @@ h4{
 
 .footer__link:hover {
 	color: goldenrod;
+}
+
+.modal{
+    position:fixed;
+    z-index:10;
+    background-color: rgba(255,255,255, .94);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:0;
+    visibility:hidden;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    transition: all .3s ease-out;
+
+}
+
+.modal--is-visible {
+  opacity:1;
+  visibility: visible;
+  -webkit-transform:scale(1);
+          transform:scale(1);
+}
+
+.modal__inner{
+  position:absolute;
+  width:100%;
+  top:10%;
+  left:20%;
+}
+
+.modal__close{
+  position:absolute;
+  top:40px;
+  right:40px;
+  cursor:pointer;
+}
+
+.modal__close:hover{
+  color:#555;
 }
 
 .reveal-item {
