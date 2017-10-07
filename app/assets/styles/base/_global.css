@@ -10,9 +10,9 @@ body {
 }
 @font-face {
 	font-family: "Voyage Regular";
-	src: url("/assets/fonts/Voyage Regular.otf");
+	src: url ('/assets/fonts/voyage_regular.woff');
 	src:
-	url ("/assets/fonts/voyage_regular.woff"),
+    url("/assets/fonts/Voyage Regular.otf"),
     url('/assets/fonts/voyage_regular-webfont.eot'),
     url('/assets/fonts/voyage_regular-webfont.eot?#iefix') format('embedded-opentype'),
     url('/assets/fonts/voyage_regular-webfont.ttf') format('truetype'),
