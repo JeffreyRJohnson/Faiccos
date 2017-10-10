@@ -94,8 +94,9 @@
 	    function MobileMenu() {
 	        _classCallCheck(this, MobileMenu);
 
-	        this.menuIcon = (0, _jquery2.default)(".nav__burger");
-	        this.menuContent = (0, _jquery2.default)(".nav__row");
+	        this.menuIcon = (0, _jquery2.default)(".fa.fa-bars");
+	        this.menuIconClose = (0, _jquery2.default)(".fa.fa-times").hide();
+	        this.menuContent = (0, _jquery2.default)(".primary-nav__row");
 	        this.reservationsLink = (0, _jquery2.default)("#reservations-link");
 	        this.aboutLink = (0, _jquery2.default)("#about-link");
 	        this.specialsLink = (0, _jquery2.default)("#specials-link");
@@ -108,7 +109,7 @@
 	        key: "events",
 	        value: function events() {
 	            this.menuIcon.click(this.toggleTheMenu.bind(this));
-	            this.reservationsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#reservations"), 4));
+	            this.reservationsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#rreservations"), 4));
 	            this.aboutLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#about"), 3));
 	            this.specialsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#specials"), 3));
 	            this.menuLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#menu-section"), 1100));
@@ -117,7 +118,9 @@
 	    }, {
 	        key: "toggleTheMenu",
 	        value: function toggleTheMenu() {
-	            this.menuContent.toggleClass("nav__row--open");
+	            this.menuContent.toggleClass("primary-nav__row--open");
+	            this.menuIcon.toggleClass("fa fa-times");
+	            this.menuIcon.toggleClass("fa fa-bars");
 	        }
 	    }, {
 	        key: "smoothScroll",

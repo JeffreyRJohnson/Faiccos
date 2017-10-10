@@ -1,90 +1,91 @@
-.info__text {
-	color: #555;
-	font-size: 14px;
-	text-align: center;
-	padding: 20px;
-}
-.container {
-	@mixin atLarge {
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-		display: flex;
-		position: relative;
-		top: -30px;
-		box-sizing: border-box;
-		margin-bottom: -70px;
-		height: 580px;
-  }	
-  @mixin atExtraLarge{
-    width:68%;
-    margin-left: 16%;
-    margin-right:16%;
-		
-  }
-	img {
-		    @mixin atLarge{
-  height:290px;
-  padding:0;
-margin:0;		
+.info {
+	&__container {
+		@mixin atLarge {
+			width: 80%;
+			margin-left: 10%;
+			margin-right: 10%;
+			display: flex;
+			position: relative;
+			top: -30px;
+			box-sizing: border-box;
+			margin-bottom: -70px;
+			height: 580px;
+		}
+	}
+	&__text {
+		color: #555;
+		font-size: 14px;
+		text-align: center;
+		padding: 20px;
+		@mixin atExtraLarge {
+			width: 68%;
+			margin-left: 16%;
+			margin-right: 16%;
+		}
+	}
+	&__image__reservations,
+	&__image__about {
+		@mixin atLarge {
+			height: 290px;
+			padding: 0;
+			margin: 0;
+		}
+	}
+	&__text-block--reservations {
+		text-align: center;
+		padding: 40px 20px;
+		background-color: white;
+		@mixin atSmall {
+			padding: 20px 40px 60px 40px;
+		}
+		@mixin atLarge {
+			height: 290px;
+			padding: 0 20px;
+			margin: 0;
+		}
+		@mixin atExtraLarge {
+			height: 290px;
+			padding: 0 20px;
+			margin: 0;
+		}
+	}
+	&__text-block--about {
+		text-align: center;
+		padding: 40px 20px;
+		background-color: white;
+		@mixin atSmall {
+			padding: 20px 40px 60px 40px;
+		}
+		@mixin atLarge {
+			height: 290px;
+			padding: 0 20px;
+			margin: 0;
+		}
+	}
+	&__button {
+		border: 2px solid goldenrod;
+		background: none;
+		color: goldenrod;
+		padding: 8px 12px;
+		cursor: pointer;
+		@mixin atSmall {
+			margin: 20px 0 10px 0;
+		}
+		@mixin atLarge {
+			margin: 0;
+			font-size: 12px;
+			font-weight: 700;
+			padding: 12px 28px;
+		}
+		@mixin atExtraLarge {
+			margin: 0;
+			font-size: 12px;
+			font-weight: 700;
+			padding: 12px 28px;
 		}
 	}
 }
-.info__text-block--reservations {
-	text-align: center;
-	padding: 40px 20px;
-	background-color: white;
-	@mixin atSmall {
-		padding: 20px 40px 60px 40px;
-	}
-	@mixin atLarge {
-		height: 290px;
-		padding: 0 20px;
-		margin: 0;
-	}
-	@mixin atExtraLarge{
-		height: 290px;
-		padding: 0 20px;
-		margin:0;
-	}
-}
 
-button {
-	border: 2px solid goldenrod;
-	background: none;
-	color: goldenrod;
-	padding: 8px 12px;
-	cursor: pointer;
-	@mixin atSmall {
-		margin: 20px 0 10px 0;
-	}
-	@mixin atLarge {
-		margin:0;
-		font-size: 12px;
-		font-weight: 700;
-		padding: 12px 28px;
-	}
-	@mixin atExtraLarge{
-		margin: 0;
-		font-size: 12px;
-		font-weight: 700;
-		padding: 12px 28px;
-	}
-}
-
-.info__text-block--about {
-	text-align: center;
-	padding: 40px 20px;
-	background-color: white;
-	@mixin atSmall {
-		padding: 20px 40px 60px 40px;
-	}
-	@mixin atLarge {
-		height: 290px;
-		padding: 0 20px;
-		margin: 0;
-	}
-}
 #about {
 	display: flex;
 	flex-direction: column-reverse;
@@ -93,6 +94,18 @@ button {
 		width: 67%;
 	}
 }
+
+#about h3 {
+	padding-top: 40px;
+	@mixin atLarge {
+		padding: 20px 0 0 0;
+		margin-top: 10px;
+	}
+	@mixin atExtraLarge {
+		padding-top: 40px;
+	}
+}
+
 #reservations {
 	display: flex;
 	flex-direction: column;
@@ -101,23 +114,12 @@ button {
 		width: 33%;
 	}
 }
+
 #reservations h3 {
-	@mixin atLarge{
-		padding:20px 0;
+	@mixin atLarge {
+		padding: 20px 0;
 	}
-	@mixin atExtraLarge{
-		padding-top:40px;
-	}
-}
-#about h3 {
-	padding-top: 40px;
-	@mixin atLarge{
-		padding:20px 0 0 0;
-		margin-top:10px;
-	}
-	@mixin atExtraLarge{
-		padding-top:40px;
+	@mixin atExtraLarge {
+		padding-top: 40px;
 	}
 }
-
-

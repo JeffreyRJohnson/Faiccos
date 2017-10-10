@@ -2,8 +2,9 @@ import $ from 'jquery';
 
 class MobileMenu {
     constructor() {
-        this.menuIcon = $(".nav__burger");
-        this.menuContent = $(".nav__row");
+        this.menuIcon = $(".fa.fa-bars");
+        this.menuIconClose = $(".fa.fa-times").hide();
+        this.menuContent = $(".primary-nav__row");
         this.reservationsLink = $("#reservations-link");
         this.aboutLink = $("#about-link");
         this.specialsLink = $("#specials-link");
@@ -14,7 +15,7 @@ class MobileMenu {
 
     events() {
         this.menuIcon.click(this.toggleTheMenu.bind(this));
-        this.reservationsLink.click(this.smoothScroll.bind(this, $("#reservations"), 4));
+        this.reservationsLink.click(this.smoothScroll.bind(this, $("#rreservations"), 4));
         this.aboutLink.click(this.smoothScroll.bind(this, $("#about"), 3));
         this.specialsLink.click(this.smoothScroll.bind(this, $("#specials"), 3));
         this.menuLink.click(this.smoothScroll.bind(this, $("#menu-section"), 1100));
@@ -22,8 +23,12 @@ class MobileMenu {
     }
 
     toggleTheMenu() {
-        this.menuContent.toggleClass("nav__row--open");
+        this.menuContent.toggleClass("primary-nav__row--open");
+        this.menuIcon.toggleClass("fa fa-times");
+        this.menuIcon.toggleClass("fa fa-bars");
     }
+
+
 
     smoothScroll(navLink, placement) {
         $('html, body').animate({

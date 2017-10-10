@@ -1,19 +1,34 @@
-.nav__burger {
-	color: white;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	z-index: 8;
-	cursor:pointer;
-	&:hover {
-		color: goldenrod;
+.primary-nav {
+	&__burger {
+		color: white;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 8;
+		cursor: pointer;
+		&:hover {
+			color: goldenrod;
+		}
+		@mixin atMedium {
+			display: none;
+		}
 	}
-	@mixin atMedium {
-		display: none;
+	&__close{
+		color: white;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 8;
+		cursor: pointer;
+		&:hover {
+			color: goldenrod;
+		}
+		@mixin atMedium {
+			display: none;
+		}
 	}
-}
-
-.nav__logo{
+	
+	&__logo{
     display:none;
     @mixin atLarge {
     display:block; 
@@ -25,80 +40,71 @@
     z-index:7;
 }
 }
-
-.nav__row {
-	overflow: hidden;
-	background: #000;
-	height: 0;
-	position: absolute;
-	z-index: 5;
-	width: 100%;
-	top: 0;
-	list-style-type: none;
-	@mixin atMedium {
-		height: 40px;
-		top: 10px;
-		left: -3%;
-		background: none;
-		text-align: center;
+	
+	&__row {
+		overflow: hidden;
+		background: #000;
+		height: 0;
+		position: absolute;
+		z-index: 5;
+		width: 100%;
+		top: 0;
+		list-style-type: none;
+		&--open {
+			height: auto;
+			padding: 20px;
+			margin-top: 0;
+		}
+		@mixin atMedium {
+			height: 40px;
+			top: 10px;
+			left: -3%;
+			background: none;
+			text-align: center;
+		}
+		@mixin atLarge {
+			top: 180px;
+			font-weight: 700;
+			left: 1%;
+		}
+		@mixin atExtraLarge {
+			top: 200px;
+			left: 12%;
+		}
 	}
-	@mixin atLarge {
-		top: 180px;
-		font-weight: 700;
-		left:1%;
+	&__list {
+		float: none;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		@mixin atMedium {
+			display: inline-block;
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
-	@mixin atExtraLarge{
-		top: 200px;
-		left: 12%;
+	&__link {
+		color: #fff;
+		padding: 10px;
+		border-bottom: 1px solid #555;
+		display: block;
+		margin: 0;
+		text-decoration: none;
+		&:hover {
+			color: goldenrod;
+		}
+		@mixin atMedium {
+			border: none;
+		}
+	}
+	&__bullet {
+		display: none;
+		@mixin atMedium {
+			display: inline;
+			font-size: 10px;
+			vertical-align: 30%;
+			color: #555;
+		}
 	}
 }
-.nav__row--open {
-	height: auto;
-	padding: 20px;
-	margin-top: 0;
-}
-.nav__list {
-	float: none;
-	text-align: left;
-	width: 100%;
-	margin: 0;
-	@mixin atMedium {
-		display: inline-block;
-		width: auto;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-.nav__row i {
-	display: none;
-	@mixin atMedium {
-		display: inline;
-		font-size: 10px;
-		vertical-align: 30%;
-		color: #555;
-	}
-}
-.nav__link {
-	color: #fff;
-	padding: 10px;
-	border-bottom: 1px solid #555;
-	display: block;
-	margin: 0;
-	text-decoration: none;
-	@mixin atMedium {
-		border: none;
-	}
-}
-.nav__link:hover {
-	color:goldenrod;
-}
-
-
-
-
-
-
-
-
-
-

@@ -1,34 +1,33 @@
 .large-hero {
 	position: relative;
-}
-.large-hero__text-content {
-	position: absolute;
-	top: 35%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	left: 0;
-	width: 100%;
-	text-align: center;
-}
-.large-hero__title {
-	font-weight: 300;
-	color: #fff;
-	font-size: 3em;
-	margin: 0;
-	font-family: "Voyage Regular";
-	text-align: center;
-	@mixin atSmall {
-		font-size: 10em;
+	&__text-content {
+		position: absolute;
+		top: 35%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	&__title {
+		font-weight: 300;
+		color: #fff;
+		font-size: 3em;
+		margin: 0;
+		font-family: "Voyage Regular";
+		text-align: center;
+		@mixin atSmall {
+			font-size: 10em;
+		}
+	}
+	&__subtitle {
+		font-weight: 300;
+		color: #fff;
+		font-size: 1.0rem;
+		margin-top: -10px;
+		@mixin atSmall {
+			font-size: 2em;
+			margin-top: -40px;
+		}
 	}
 }
-.large-hero__subtitle {
-	font-weight: 300;
-	color: #fff;
-	font-size: 1.0rem;
-	margin-top: -10px;
-	@mixin atSmall {
-		font-size: 2em;
-		margin-top: -40px;
-	}
-}
-

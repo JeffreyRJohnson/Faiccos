@@ -9,7 +9,7 @@
     <meta name="description" content="The menu and webpage of the best Italian restaurant ever">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/styles/styles-cddd59e65c.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-fef7353309.css"/>
     <script src="assets/scripts/Vendor-5b22c9b842.js"></script>
 </head>
 
@@ -17,25 +17,27 @@
     <!-- global -->
     <div class="wrapper-outer lazyload">
         <div class="wrapper">
-            <!-- primary nav -->
             <header>
-                <nav>
-                    <i class="fa fa-bars nav__burger" aria-hidden="true"></i>
-                    <div class="nav__logo">Italian</div>
-
-                    <ul class="nav__row">
-                        <li class="nav__list"><a href="#reservations" class="nav__link open-modal" id="reservations-link">RESERVATIONS</a></li>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <li class="nav__list"><a href="#about" class="nav__link" id="about-link">ABOUT</a></li>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <li class="nav__list"><a href="#specials" class="nav__link" id="specials-link">OUR SPECIALITIES</a></li>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <li class="nav__list"><a href="#menu-section" class="nav__link" id="menu-section-link">MENU</a></li>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <li class="nav__list"><a href="#desert-menu" class="nav__link" id="deserts-link">DESERTS</a></li>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        <li class="nav__list"><a href="#footer" class="nav__link">CONTACT</a></li>
-                        <i class="fa fa-circle" aria-hidden="true"></i>
+                <!-- primary nav -->
+                <nav class="primary-nav">
+                    <div class="primary-nav__burger">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <div class="primary-nav__logo">Italian</div>
+                    <ul class="primary-nav__row">
+                        <li class="primary-nav__list"><a href="#reservations" class="primary-nav__link open-modal" id="reservations-link">RESERVATIONS</a></li>
+                        <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
+                        <li class="primary-nav__list"><a href="#about" class="primary-nav__link" id="about-link">ABOUT</a></li>
+                        <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
+                        <li class="primary-nav__list"><a href="#specials" class="primary-nav__link" id="specials-link">OUR SPECIALITIES</a></li>
+                        <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
+                        <li class="primary-nav__list"><a href="#menu-section" class="primary-nav__link" id="menu-section-link">MENU</a></li>
+                        <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
+                        <li class="primary-nav__list"><a href="#desert-menu" class="primary-nav__link" id="deserts-link">DESERTS</a></li>
+                        <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
+                        <li class="primary-nav__list"><a href="#footer" class="primary-nav__link">CONTACT</a></li>
+                        <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
                         <li>Italian Restaurant <br> 2399 Some Street <br> Sometown XS, 66543 <br> (555)555-5555
                         </li>
                     </ul>
@@ -44,7 +46,7 @@
             <!-- large hero -->
             <div class="large-hero">
                 <picture>
-                    <img data-sizes="auto" data-src="assets/images/plates-of-food--small.jpeg" data-srcset="assets/images/plates-of-food--small.jpeg 480w,
+                    <img data-src="assets/images/plates-of-food--small.jpeg" data-srcset="assets/images/plates-of-food--small.jpeg 480w,
                 assets/images/plates-of-food--med.jpeg 800w,assets/images/plates-of-food--large.jpeg 1400w" class="lazyload" alt="plates of food" />
                 </picture>
 
@@ -54,18 +56,18 @@
                 </div>
             </div>
             <!-- reservations -->
-            <div class="container">
+            <div class="info__container">
                 <section id="reservations">
                     <div class="info__text-block--reservations">
                         <h3>Reservations</h3>
                         <p class="info__text">Call us now to book a table in our restaurant. Calls must be in the same day as the reservation.</p>
-                        <button class="open-modal">BOOK A TABLE</button>
+                        <button class="open-modal info__button">BOOK A TABLE</button>
                     </div>
                     <img data-src="assets/images/Italian-Restaurant-tables.jpeg" class="info__image__reservations lazyload reveal-item" alt="Italian Restaurant tables">
                 </section>
                 <!-- about -->
                 <section id="about">
-                    <img data-src="assets/images/Italian-Restaurant-exterior.jpeg" class=" lazyload info__image__about reveal-item" alt="The exterior of Italian restaurant">
+                    <img data-src="assets/images/Italian-Restaurant-exterior.jpeg" class="info__image__about lazyload reveal-item" alt="The exterior of Italian restaurant">
                     <div class="info__text-block--about">
                         <h3>About</h3>
                         <p class="info__text">Italian restaurant was opened by award winning Chef Luigi Mario to offer residents and visitors of southern Sometown with the authentic Italian cuisine that the Mario name has become synonymous with after the success of the Mario
@@ -268,7 +270,7 @@
             </div>
         </div>
 
-        <script src="assets/scripts/App-ca1fe7a4df.js"></script>
+        <script src="assets/scripts/App-376af6b4d0.js"></script>
 </body>
 
 </html>
