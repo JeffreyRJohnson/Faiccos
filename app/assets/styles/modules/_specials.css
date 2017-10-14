@@ -66,85 +66,40 @@
 	#specials h3 {
 		display: none;
 	}
-	.menu-item__name {
-		float: none;
-		top: 0px;
-		background: white;
-        font-size:1.2em;
-        font-weight:700;
-        text-transform:uppercase;
-        color:black;
+	.specials-item__name {
+		font-weight:700;
+		display:block;
 		@mixin atLarge{
-			top:20px;
+			padding-top:20px;
 		}
 		@mixin atExtraLarge{
-			top:50px;
+			
 		}
 	}
-	.menu-item__price {
-		display: none;
-	}
-	.menu-item__description {
-		font-size: 14px;
-		// margin-top: 20px;
-		border: none;
-		top: 0;
-		padding: 20px 50px;
+	
+	.specials-item__description {
+		display:block;
+		color:#999;
+		padding:20px 0 20px 0;
 		@mixin atLarge{
-			top:20px;
-			padding:20px;
+			padding:20px 20px 70px 20px;
+			font-size:.9em;
 		}
 		@mixin atExtraLarge{
-			top:50px;
+			
 		}
 	}
-	.menu-item__price--lasagna {
+	.specials-item__price{
 		color: goldenrod;
-		float: none;
 		font-weight: bold;
-		position: relative;
 		@mixin atLarge{
-			bottom:-30px; 
+position:absolute;
+			bottom:20px;
+			
+			left:30%;
+			right:30%;
 		}
-		@mixin atExtraLarge{
-			bottom:-30px;
-		}
-	}
-    .menu-item__price--tramezzino {
-		color: goldenrod;
-		float: none;
-		font-weight: bold;
-		position: relative;
-		@mixin atLarge{
-			bottom:-50px;
-		}
-		@mixin atExtraLarge{
-			bottom: -60px;
-		}
-	}
-	.menu-item__price--salad {
-		color: goldenrod;
-		float: none;
-		font-weight: bold;
-		position: relative;
-		@mixin atLarge{
-			bottom: -20px;
-		}
-		@mixin atExtraLarge{
-			bottom: -40px;
-		}
-	}
-	.menu-item__price--spaghetti {
-		color: goldenrod;
-		float: none;
-		font-weight: bold;
-		position: relative;
-		@mixin atLarge{
-			bottom:-30px;
-		}
-		@mixin atExtraLarge{
-			bottom: -46px;
-		}
+		
 	}
 }
 

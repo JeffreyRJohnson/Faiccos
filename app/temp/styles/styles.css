@@ -1024,138 +1024,48 @@ h3 {
   display: none;
 }
 
-#specials .menu-item__name {
-  float: none;
-  top: 0px;
-  background: white;
-  font-size:1.2em;
+#specials .specials-item__name {
   font-weight:700;
-  text-transform:uppercase;
-  color:black;
+  display:block;
 }
 
 @media (min-width: 1010px) {
 
-  #specials .menu-item__name {
-    top: 20px;
+  #specials .specials-item__name {
+    padding-top: 20px;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1400px) {}
 
-  #specials .menu-item__name {
-    top: 50px;
-  }
-}
-
-#specials .menu-item__price {
-  display: none;
-}
-
-#specials .menu-item__description {
-  font-size: 14px;
-  // margin-top: 20px;
-  border: none;
-  top: 0;
-  padding: 20px 50px;
+#specials .specials-item__description {
+  display:block;
+  color:#999;
+  padding:20px 0 20px 0;
 }
 
 @media (min-width: 1010px) {
 
-  #specials .menu-item__description {
-    top: 20px;
-    padding: 20px;
+  #specials .specials-item__description {
+    padding: 20px 20px 70px 20px;
+    font-size: .9em;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1400px) {}
 
-  #specials .menu-item__description {
-    top: 50px;
-  }
-}
-
-#specials .menu-item__price--lasagna {
+#specials .specials-item__price{
   color: goldenrod;
-  float: none;
   font-weight: bold;
-  position: relative;
 }
 
 @media (min-width: 1010px) {
 
-  #specials .menu-item__price--lasagna {
-    bottom: -30px;
-  }
-}
-
-@media (min-width: 1400px) {
-
-  #specials .menu-item__price--lasagna {
-    bottom: -30px;
-  }
-}
-
-#specials .menu-item__price--tramezzino {
-  color: goldenrod;
-  float: none;
-  font-weight: bold;
-  position: relative;
-}
-
-@media (min-width: 1010px) {
-
-  #specials .menu-item__price--tramezzino {
-    bottom: -50px;
-  }
-}
-
-@media (min-width: 1400px) {
-
-  #specials .menu-item__price--tramezzino {
-    bottom: -60px;
-  }
-}
-
-#specials .menu-item__price--salad {
-  color: goldenrod;
-  float: none;
-  font-weight: bold;
-  position: relative;
-}
-
-@media (min-width: 1010px) {
-
-  #specials .menu-item__price--salad {
-    bottom: -20px;
-  }
-}
-
-@media (min-width: 1400px) {
-
-  #specials .menu-item__price--salad {
-    bottom: -40px;
-  }
-}
-
-#specials .menu-item__price--spaghetti {
-  color: goldenrod;
-  float: none;
-  font-weight: bold;
-  position: relative;
-}
-
-@media (min-width: 1010px) {
-
-  #specials .menu-item__price--spaghetti {
-    bottom: -30px;
-  }
-}
-
-@media (min-width: 1400px) {
-
-  #specials .menu-item__price--spaghetti {
-    bottom: -46px;
+  #specials .specials-item__price {
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+    right: 30%;
   }
 }
 
@@ -1239,12 +1149,14 @@ h3 {
 	z-index: 1;
 	background: #fff;
 	padding-right: 15px;
+	text-transform: uppercase;
 }
 
 @media (min-width: 1010px) {
 
   .menu-item__name {
     background-color: #FDF9F3;
+    top: 24px;
   }
 }
 
@@ -1253,7 +1165,7 @@ h3 {
 	color: goldenrod;
 	position: relative;
 	top:41px;
-	z-index: 1;
+	z-index: 3;
 	background: #FDF9F3;
 	padding-left: 20px;
 	font-family: "Voyage Regular";
