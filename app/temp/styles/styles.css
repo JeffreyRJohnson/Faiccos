@@ -569,7 +569,7 @@ h3 {
 
 .primary-nav__row--open {
   height: auto;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
   margin-top: 0;
 }
 
@@ -1251,24 +1251,41 @@ h3 {
 .menu-item__price {
 	float: right;
 	color: goldenrod;
-	font-weight: bold;
 	position: relative;
+	top:41px;
 	z-index: 1;
 	background: #FDF9F3;
-	padding-left: 15px;
+	padding-left: 20px;
 	font-family: "Voyage Regular";
-	font-size: 2em;
+	font-size: 2.8em;
 }
 
 .menu-item__description {
 	clear: both;
+	float: left;
+	color: #999;
+	font-size:.8em;
+	position: relative;
+	z-index: 1;
+	background: #fff;
+}
+
+@media (min-width: 1010px) {
+
+  .menu-item__description {
+    background-color: #FDF9F3;
+  }
+}
+
+.dot-leader{
+clear:both;
 	display: block;
 	color: #999;
 	font-size: 14px;
 	padding-top: 10px;
-	border-top: 1px solid #ddd;
-	top: -8px;	
-	position: relative;
+	border-top: 1px dotted #ddd;
+	top: -5px;	
+	position: relative;	
 }
 
 .parallax2 {
@@ -1291,6 +1308,7 @@ h3 {
 .menu-section__row {
 	padding: 0 5% 0 9%;
 	list-style-type: none;
+	
 }
 
 .menu-section__row:after {

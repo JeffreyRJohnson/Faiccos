@@ -12,6 +12,7 @@
 .menu-section__row {
 	padding: 0 5% 0 9%;
 	list-style-type: none;
+	
 }
 .menu-section__row:after {
 	content: "";

@@ -13,24 +13,38 @@
 .menu-item__price {
 	float: right;
 	color: goldenrod;
-	font-weight: bold;
 	position: relative;
+	top:41px;
 	z-index: 1;
 	background: $offwhite;
-	padding-left: 15px;
+	padding-left: 20px;
 	font-family: "Voyage Regular";
-	font-size: 2em;
+	font-size: 2.8em;
 }
 
 .menu-item__description {
 	clear: both;
+	float: left;
+	color: #999;
+	font-size:.8em;
+	position: relative;
+	z-index: 1;
+	background: #fff;
+	
+	@mixin atLarge {
+		background-color: $offwhite;
+	}
+}
+
+.dot-leader{
+clear:both;
 	display: block;
 	color: #999;
 	font-size: 14px;
 	padding-top: 10px;
-	border-top: 1px solid #ddd;
-	top: -8px;	
-	position: relative;
+	border-top: 1px dotted #ddd;
+	top: -5px;	
+	position: relative;	
 }
 
 
