@@ -550,9 +550,32 @@ h3 {
     color: white;
     font-size: 50px;
     position: absolute;
-    top: 200px;
-    left: 240px;
+    top: 180px;
+    left: 220px;
     z-index: 7;
+    font-family: Voyage Regular;
+  }
+}
+
+.primary-nav__logo img{
+  width:20px;
+}
+
+.primary-nav__logo--sub{
+  display:none;
+}
+
+@media (min-width: 1010px) {
+
+  .primary-nav__logo--sub {
+    display: block;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 44px;
+    left: 18px;
+    z-index: 7;
+    font-family: Roboto;
   }
 }
 
@@ -589,7 +612,7 @@ h3 {
   .primary-nav__row {
     top: 180px;
     font-weight: 700;
-    left: 1%;
+    left: 20%;
   }
 }
 
@@ -597,7 +620,7 @@ h3 {
 
   .primary-nav__row {
     top: 200px;
-    left: 12%;
+    left: 20%;
   }
 }
 
@@ -638,6 +661,14 @@ h3 {
   }
 }
 
+@media (min-width: 1010px) {
+
+  .primary-nav__link {
+    font-size: 1em;
+    font-weight: 700;
+  }
+}
+
 .primary-nav__bullet {
   display: none;
 }
@@ -649,6 +680,47 @@ h3 {
     font-size: 10px;
     vertical-align: 30%;
     color: #555;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  .primary-nav__bullet {
+    font-size: 5px;
+  }
+}
+
+.forkhead{
+	display:none;
+}
+
+@media (min-width: 1010px) {
+
+  .forkhead {
+    display: block;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 44px;
+    left: 80px;
+    z-index: 7;
+  }
+}
+
+.forkhandle{
+	display:none;	
+}
+
+@media (min-width: 1010px) {
+
+  .forkhandle {
+    display: block;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 47px;
+    left: -3px;
+    z-index: 7;
   }
 }
 
