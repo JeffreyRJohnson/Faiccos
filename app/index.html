@@ -48,7 +48,7 @@
                         <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
                         <li class="primary-nav__list"><a href="#footer" class="primary-nav__link">CONTACT</a></li>
                         <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
-                        <li class="primary-nav__list primary-nav__link">Italian Restaurant <br> 2399 Some Street <br> Sometown XS, 66543 <br> (555)555-5555
+                        <li class="address">Italian Restaurant <br> 2399 Some Street <br> Sometown XS, 66543 <br> (555)555-5555
                         </li>
                     </ul>
                 </nav>
@@ -266,17 +266,78 @@
         <!-- wrapper outer -->
 
         <div class="modal">
-            <i class="fa fa-window-close modal__close" aria-hidden="true"></i>
+            <i class="fa fa-times modal__close" aria-hidden="true"></i>
             <div class="modal__inner">
-                <h3>Reservations</h3>
-                Saturday October 5th 2017 <br>
-                <label for="name">name:</label>
-                <input type="text" name="name" required> <br>
-                <label for="time">time:</label>
-                <input type="time" name="time" min="18:00" max="22:00" required> <br>
-                <label for="guests">guests: </label>
-                <input type="number" name="guests" required> <br>
-                <input type="submit" value="Reserve">
+                <div class="res-top">
+                    <p class="modal__header">Reservations</p>
+                    <p> for</p>
+                    <p><span id="todays-day" class="modal__date"></span>
+                        <span id="todays-date" class="modal__date"></span></p>
+                </div>
+                <form action="" method="">
+
+                    <div class="box">
+                        <label for="fname" class="modal__label">FIRST NAME</label><br>
+                        <input type="text" name="fname" required><br>
+                    </div>
+
+                    <div class="box">
+                        <label for="lname" class="modal__label">LAST NAME</label><br>
+                        <input type="text" name="lname" required><br>
+                    </div>
+
+
+                    <div class="box">
+                        <label for="email" class="modal__label">EMAIL</label><br>
+                        <input type="email" name="email" required><br>
+                    </div>
+
+                    <div class="box">
+                        <label for="phone" class="modal__label">PHONE</label><br>
+                        <input type="tel" name="phone" required><br>
+                    </div>
+
+
+                    <div class="box">
+                        <label for="guests" class="modal__label">GUESTS</label><br>
+                        <select name="guests" id="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="box">
+                        <label for="time" class="modal__label">TIME</label><br>
+                        <select id="time" name="time">
+                    <option value="6">6:00pm</option>
+                    <option value="630">6:30pm</option>
+                    <option value="7">7:00pm</option>
+                    <option value="730">7:30pm</option>
+                    <option value="8">8:00pm</option>
+                    <option value="830">8:30pm</option>
+                    <option value="9">9:00pm</option>
+                    <option value="930">9:30pm</option>
+                    <option value="10">10:00pm</option>
+                    </select>
+                    </div>
+                    <!-- <input type="time" name="time" min="18:00" max="22:00" required><br> -->
+
+                    <input type="submit" value="Reserve" class="res-button">
+
+                </form>
             </div>
         </div>
 

@@ -3,7 +3,7 @@ import $ from 'jquery';
 class MobileMenu {
     constructor() {
         this.menuIcon = $(".fa.fa-bars");
-        this.menuIconClose = $(".fa.fa-times").hide();
+        this.menuIconClose = $(".primary-nav__burger .fa.fa-times").hide();
         this.menuContent = $(".primary-nav__row");
         this.reservationsLink = $("#reservations-link");
         this.aboutLink = $("#about-link");
@@ -15,7 +15,7 @@ class MobileMenu {
 
     events() {
         this.menuIcon.click(this.toggleTheMenu.bind(this));
-        this.reservationsLink.click(this.smoothScroll.bind(this, $("#rreservations"), 4));
+        // this.reservationsLink.click(this.smoothScroll.bind(this, $("#reservations"), 4));
         this.aboutLink.click(this.smoothScroll.bind(this, $("#about"), 3));
         this.specialsLink.click(this.smoothScroll.bind(this, $("#specials"), 3));
         this.menuLink.click(this.smoothScroll.bind(this, $("#menu-section"), 1100));

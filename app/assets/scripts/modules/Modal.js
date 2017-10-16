@@ -6,6 +6,10 @@ class Modal {
         this.modal = $(".modal");
         this.closeModalButton = $(".modal__close");
         this.events();
+        var d = new Date();
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.getElementById("todays-day").innerHTML = days[d.getDay()];
+        document.getElementById("todays-date").innerHTML = (new Date()).toString().split(' ').splice(1, 3).join(' ');
     }
 
     events() {

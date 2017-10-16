@@ -95,7 +95,7 @@
 	        _classCallCheck(this, MobileMenu);
 
 	        this.menuIcon = (0, _jquery2.default)(".fa.fa-bars");
-	        this.menuIconClose = (0, _jquery2.default)(".fa.fa-times").hide();
+	        this.menuIconClose = (0, _jquery2.default)(".primary-nav__burger .fa.fa-times").hide();
 	        this.menuContent = (0, _jquery2.default)(".primary-nav__row");
 	        this.reservationsLink = (0, _jquery2.default)("#reservations-link");
 	        this.aboutLink = (0, _jquery2.default)("#about-link");
@@ -109,7 +109,7 @@
 	        key: "events",
 	        value: function events() {
 	            this.menuIcon.click(this.toggleTheMenu.bind(this));
-	            this.reservationsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#rreservations"), 4));
+	            // this.reservationsLink.click(this.smoothScroll.bind(this, $("#reservations"), 4));
 	            this.aboutLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#about"), 3));
 	            this.specialsLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#specials"), 3));
 	            this.menuLink.click(this.smoothScroll.bind(this, (0, _jquery2.default)("#menu-section"), 1100));
@@ -10808,6 +10808,10 @@
 	        this.modal = (0, _jquery2.default)(".modal");
 	        this.closeModalButton = (0, _jquery2.default)(".modal__close");
 	        this.events();
+	        var d = new Date();
+	        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	        document.getElementById("todays-day").innerHTML = days[d.getDay()];
+	        document.getElementById("todays-date").innerHTML = new Date().toString().split(' ').splice(1, 3).join(' ');
 	    }
 
 	    _createClass(Modal, [{
