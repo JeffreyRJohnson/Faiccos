@@ -82,6 +82,7 @@ img{
 			text-align: center;
 		}
 		@mixin atLarge {
+			width:75%;
 			top: 180px;
 			font-weight: 700;
 			left: 20%;

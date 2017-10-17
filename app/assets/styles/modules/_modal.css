@@ -49,31 +49,31 @@
 }
 
 form{
- width: 90%; 
-margin-left:5%;
-margin-right:5%;
+width: 320px; 
+margin:0 7%;
+@mixin atSmall{
+    width:480px;
+    margin: 0 auto;
+}
  @mixin atMedium{
-     width:70%;
-     margin-left:17%;
-margin-right:13%;
- }
- @mixin atLarge{
-     width:50%;
-        margin-left:30%;
-margin-right:20%;
- }  
+     width:520px;    
+ } 
 }
 
 input{
-    width:140px;
+    width:130px;
     height: 44px;
     border:2px solid #999;
-    margin-top:10px;
+   margin-top:10px;
     margin-bottom:20px;
+    @mixin atSmall{
+        width:200px;
+    }
     @mixin atMedium{
         width:240px;
     }
 }
+
 
 input:last-child{
     margin-top:44px;
@@ -95,19 +95,27 @@ input:focus {
 
 
 select {
-     width: 145px;
+     width: 134px;
      height:48px;
     margin-top:10px;
     border:2px solid #999;
     background-color: white;
+     @mixin atSmall{
+        width:204px;
+    }
     @mixin atMedium{
         width:244px;
     }
 }
 
 .box{
-    float:left;
     width:50%;
+    box-sizing: border-box;
+    float:left;
+}
+
+.box:nth-child(odd){
+    padding-right:10px;
 }
 
 #todays-day{
@@ -124,3 +132,4 @@ select {
     margin-top:60px;
     text-align:center;
 }
+

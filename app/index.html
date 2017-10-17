@@ -274,7 +274,7 @@
                     <p><span id="todays-day" class="modal__date"></span>
                         <span id="todays-date" class="modal__date"></span></p>
                 </div>
-                <form action="" method="">
+                <form action="" method="get" name="reservationform" id="reservationform">
 
                     <div class="box">
                         <label for="fname" class="modal__label">FIRST NAME</label><br>
@@ -294,7 +294,7 @@
 
                     <div class="box">
                         <label for="phone" class="modal__label">PHONE</label><br>
-                        <input type="tel" name="phone" required><br>
+                        <input type="telephone" name="phone" required><br>
                     </div>
 
 
@@ -308,16 +308,6 @@
                         <option value="5">5</option>
                         </select>
                     </div>
-
-
-
-
-
-
-
-
-
-
 
                     <div class="box">
                         <label for="time" class="modal__label">TIME</label><br>
@@ -334,10 +324,11 @@
                     </select>
                     </div>
                     <!-- <input type="time" name="time" min="18:00" max="22:00" required><br> -->
-
-                    <input type="submit" value="Reserve" class="res-button">
+                    <input type="submit" value="PROCESSING" class="wait-button">
+                    <input type="submit" value="RESERVE" class="res-button">
 
                 </form>
+
             </div>
         </div>
 

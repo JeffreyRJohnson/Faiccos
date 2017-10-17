@@ -610,6 +610,7 @@ h3 {
 @media (min-width: 1010px) {
 
   .primary-nav__row {
+    width: 75%;
     top: 180px;
     font-weight: 700;
     left: 20%;
@@ -1525,35 +1526,38 @@ h4{
 }
 
 form{
- width: 90%; 
-margin-left:5%;
-margin-right:5%;  
+width: 320px; 
+margin:0 7%; 
+}
+
+@media (min-width: 481px) {
+
+  form {
+    width: 480px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 800px) {
 
   form {
-    width: 70%;
-    margin-left: 17%;
-    margin-right: 13%;
-  }
-}
-
-@media (min-width: 1010px) {
-
-  form {
-    width: 50%;
-    margin-left: 30%;
-    margin-right: 20%;
+    width: 520px;
   }
 }
 
 input{
-    width:140px;
+    width:130px;
     height: 44px;
     border:2px solid #999;
-    margin-top:10px;
+   margin-top:10px;
     margin-bottom:20px;
+}
+
+@media (min-width: 481px) {
+
+  input {
+    width: 200px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -1581,11 +1585,18 @@ input:focus {
 }
 
 select {
-     width: 145px;
+     width: 134px;
      height:48px;
     margin-top:10px;
     border:2px solid #999;
     background-color: white;
+}
+
+@media (min-width: 481px) {
+
+  select {
+    width: 204px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -1596,8 +1607,13 @@ select {
 }
 
 .box{
-    float:left;
     width:50%;
+    box-sizing: border-box;
+    float:left;
+}
+
+.box:nth-child(odd){
+    padding-right:10px;
 }
 
 #todays-day{
