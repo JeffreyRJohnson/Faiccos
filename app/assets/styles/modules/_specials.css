@@ -1,54 +1,33 @@
-.parallax {
-	display:none;	
-		@mixin atLarge{
-			display:block;
-		 background: url('../../assets/images/parallax1.jpeg')no-repeat fixed 50%;
-		z-index: 5;
+.specials {
+	&__parallax {
+		display: none;
+		@mixin atLarge {
+			display: block;
+			background: url('../../assets/images/parallax1.jpeg')no-repeat fixed 50%;
+			z-index: 5;
+		}
+		&__inner {
+			display: none;
+			@mixin atLarge {
+				display: block;
+				height: 600px;
+				color: white;
+				text-align: center;
+				z-index: 5;
+				&__header {
+					color: white;
+					position: relative;
+					top: 50%;
+					font-size: 2.5em;
+					font-weight: 900;
+					letter-spacing: 6px;
+				}
+			}
+		}
 	}
-}
-.parallax-inner {
-	display:none;
-	@mixin atLarge{
-		display:block;
-	height: 600px;
-	color: white;
-	text-align: center;
-	z-index:5;
-	h2 {
-		color: white;
-		position: relative;
-		top: 50%;
-		font-size: 2.5em;
-		font-weight: 900;
-        letter-spacing:6px;
-	}
-}
-}
-.specials__text-block {
-	text-align: center;
-	box-sizing: border-box;
-	padding: 20px 20px;
-	@mixin atMedium{
-		padding: 0;
-	}
-	@mixin atLarge {
-		
-		height: 240px;
-	}
-}
-.specials-heading {
-	background:white;
-	@mixin atMedium {
-		display: block;
-		padding:60px 0;
-	}
-	@mixin atLarge{
-		display:none;
-	}
-}
 
-#specials {
-	background-color: white;
+&__container{
+background-color: white;
 	@mixin atLarge {
 		width: 80%;
 		margin-left: 10%;
@@ -58,100 +37,100 @@
 		top: -30px;
 		margin-bottom: -70px;
 	}
-    @mixin atExtraLarge{
-         width:68%;
-    margin-left: 16%;
-    margin-right:16%;
-    }
-	#specials h3 {
-		display: none;
+	@mixin atExtraLarge {
+		width: 68%;
+		margin-left: 16%;
+		margin-right: 16%;
 	}
-	.specials-item__name {
-		font-weight:700;
-		display:block;
-		@mixin atLarge{
-			padding-top:20px;
+}
+
+	&__heading {
+		background: white;
+		@mixin atMedium {
+			display: block;
+			padding: 60px 0;
 		}
-		@mixin atExtraLarge{
-			
-		}
-	}
-	
-	.specials-item__description {
-		display:block;
-		color:#999;
-		padding:20px 0 20px 0;
-		@mixin atLarge{
-			padding:20px 20px 70px 20px;
-			font-size:.9em;
-		}
-		@mixin atExtraLarge{
-			
+		@mixin atLarge {
+			display: none;
 		}
 	}
-	.specials-item__price{
+	&__list__container {
+		list-style-type: none;
+		display: inline-block;
+		@mixin atSmall {
+			width: 100%;
+		}
+		@mixin atLarge {
+			display: flex;
+			margin-bottom: -4px;
+		}
+	}
+	&__item__container {
+		@mixin atSmall {
+			width: 100%
+		}
+		@mixin atMedium {
+			float: left;
+			width: 48%;
+			padding: 0;
+			margin: 0 1% 0 1%;
+			{
+				@mixin atLarge {
+					margin: 0;
+					flex-direction: column;
+				}
+			}
+			&__item__container:nth-child(odd) {
+				margin: 0 1% 0 0;
+				@mixin atLarge {
+					margin: 0;
+					flex-direction: column;
+				}
+			}
+		}
+	}
+	&-reveal {
+		@mixin atLarge {
+			height: 240px;
+		}
+	}
+	&__text-block {
+		text-align: center;
+		box-sizing: border-box;
+		padding: 20px 20px;
+		@mixin atMedium {
+			padding: 0;
+		}
+		@mixin atLarge {
+			height: 240px;
+		}
+	}
+	&-item__name {
+		font-weight: 700;
+		display: block;
+		@mixin atLarge {
+			padding-top: 20px;
+		}
+		@mixin atExtraLarge {}
+	}
+	&-item__description {
+		display: block;
+		color: #999;
+		padding: 20px 0 20px 0;
+		@mixin atLarge {
+			padding: 20px 20px 70px 20px;
+			font-size: .9em;
+		}
+		@mixin atExtraLarge {}
+	}
+	&-item__price {
 		color: goldenrod;
 		font-weight: bold;
-		@mixin atLarge{
-position:absolute;
-			bottom:20px;
-			
-			left:30%;
-			right:30%;
+		@mixin atLarge {
+			position: absolute;
+			bottom: 20px;
+			left: 30%;
+			right: 30%;
 		}
-		
 	}
 }
-
-#specials ul {
-	list-style-type: none;
-	display: inline-block;
-	@mixin atSmall {
-		width: 100%;
-	}
-	@mixin atLarge {
-		display: flex;
-		margin-bottom: -4px;
-	}
-}
-#specials img {
-	@mixin atLarge {
-		height: 240px;
-	}
-}
-
-#specials ul li{
-    @mixin atSmall {    
-        width:100%
-    }
-   @mixin atMedium{
-        float: left;
-        width: 48%;
-        padding: 0;
-        margin:0 1% 0 1%;{
-            @mixin atLarge{
-                margin:0;
-                flex-direction:column; 
-        }
-    }
-
-#specials ul li:nth-child(odd){
-    margin:0 1% 0 0;
-    @mixin atLarge{
-        margin:0;
-        flex-direction:column;
-        
-    }
-}
-}
-    }
-
-
-
-
- 
-
-
-
-
- 

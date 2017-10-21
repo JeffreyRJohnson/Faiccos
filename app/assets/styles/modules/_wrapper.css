@@ -1,12 +1,12 @@
-.wrapper-outer {
+.wrapper{
 	@mixin atLarge {
 		padding-top: 160px;
 		padding-bottom: 160px;
 		width: 100%;
 		height: 100%;
 	}
-}
-.wrapper-outer::after {
+
+&::after {
 	@mixin atLarge {
 		background: url("../../assets/images/background.jpeg") no-repeat fixed center;
 		content: "";
@@ -19,7 +19,8 @@
 		z-index: -1;
 	}
 }
-.wrapper {
+
+&__inner {
 	max-width: 100%;
 	@mixin atLarge {
 		background: #fff;
@@ -28,4 +29,5 @@
 		margin-right: auto;
 		background-color: $offwhite;
 	}
+}
 }

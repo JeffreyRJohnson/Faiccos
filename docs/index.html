@@ -9,14 +9,14 @@
     <meta name="description" content="The menu and webpage of the best Italian restaurant ever">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/styles/styles-57cd7108b9.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-6a099f5625.css"/>
     <script src="assets/scripts/Vendor-b1908d1f3a.js"></script>
 </head>
 
 <body>
     <!-- global -->
-    <div class="wrapper-outer lazyload">
-        <div class="wrapper">
+    <div class="wrapper lazyload">
+        <div class="wrapper__inner">
             <header>
                 <!-- primary nav -->
                 <nav class="primary-nav">
@@ -26,9 +26,9 @@
                     </div>
                     <div class="primary-nav__logo"> Italian <br>
 
-                        <img src="assets/images/forkhandle.png" class="forkhandle">
-                        <span class="primary-nav__logo--sub">RESTAURANT</span>
-                        <img src="assets/images/forkhead.png" class="forkhead">
+                        <img src="assets/images/forkhandle.png" class="primary-nav__logo__sub--forkhandle">
+                        <span class="primary-nav__logo__sub">RESTAURANT</span>
+                        <img src="assets/images/forkhead.png" class="primary-nav__logo__sub--forkhead">
 
                     </div>
                     <ul class="primary-nav__row">
@@ -44,7 +44,7 @@
                         <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
                         <li class="primary-nav__list"><a href="#footer" class="primary-nav__link">CONTACT</a></li>
                         <i class="fa fa-circle primary-nav__bullet" aria-hidden="true"></i>
-                        <li class="address">Italian Restaurant <br> 2399 Some Street <br> Sometown XS, 66543 <br> (555)555-5555
+                        <li class="primary-nav__address">Italian Restaurant <br> 2399 Some Street <br> Sometown XS, 66543 <br> (555)555-5555
                         </li>
                     </ul>
                 </nav>
@@ -61,242 +61,240 @@
                     <h2 class="large-hero__subtitle">RESTAURANT</h2>
                 </div>
             </div>
-            <!-- reservations -->
+            <!--info  reservations -->
             <div class="info__container">
-                <section id="reservations">
-                    <div class="info__text-block--reservations">
-                        <h3>Reservations</h3>
-                        <p class="info__text">Call us now to book a table in our restaurant. Calls must be in the same day as the reservation.</p>
-                        <button class="open-modal info__button">BOOK A TABLE</button>
-                    </div>
-                    <img data-src="assets/images/Italian-Restaurant-tables.jpeg" class="info__image__reservations lazyload reveal-item" alt="Italian Restaurant tables">
-                </section>
-                <!-- about -->
-                <section id="about">
-                    <img data-src="assets/images/Italian-Restaurant-exterior.jpeg" class="info__image__about lazyload reveal-item" alt="The exterior of Italian restaurant">
-                    <div class="info__text-block--about">
-                        <h3>About</h3>
-                        <p class="info__text">Italian restaurant was opened by award winning Chef Luigi Mario to offer residents and visitors of southern Sometown with the authentic Italian cuisine that the Mario name has become synonymous with after the success of the Mario
-                            restaurant in Las Vegas. The restaurant now has a loyal following of its own, offering traditional Roman recipes passed down from Chef Luigi's family, as well as inventive Northern and Southern Italian preparations inspired
-                            by Chef Luigi's culinary education and travels.</p>
-                    </div>
-                </section>
-            </div>
-            <!-- 1st paralax image -->
-            <section class="parallax">
-                <div class="parallax-inner">
-                    <h2>OUR SPECIALITIES</h2>
+                <div class="info__reservations__container">
+                    <section id="reservations">
+                        <div class="info__text-block--reservations">
+                            <h3 class="info__text-block__header--reservations">Reservations</h3>
+                            <p class="info__text">Call us now to book a table in our restaurant. Calls must be in the same day as the reservation.</p>
+                            <button class="open-modal info__button">BOOK A TABLE</button>
+                        </div>
+                        <img data-src="assets/images/Italian-Restaurant-tables.jpeg" class="info__image__reservations lazyload reveal-item" alt="Italian Restaurant tables">
+                    </section>
                 </div>
-            </section>
+                <!--info  about -->
+                <div class="info__about__container">
+                    <section id="about">
+                        <img data-src="assets/images/Italian-Restaurant-exterior.jpeg" class="info__image__about lazyload reveal-item" alt="The exterior of Italian restaurant">
+                        <div class="info__text-block--about">
+                            <h3 class="info__text-block__header--about">About</h3>
+                            <p class="info__text">Italian restaurant was opened by award winning Chef Luigi Mario to offer residents and visitors of southern Sometown with the authentic Italian cuisine that the Mario name has become synonymous with after the success of the
+                                Mario restaurant in Las Vegas. The restaurant now has a loyal following of its own, offering traditional Roman recipes passed down from Chef Luigi's family, as well as inventive Northern and Southern Italian preparations
+                                inspired by Chef Luigi's culinary education and travels.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
             <!-- specials -->
-            <h3 class="specials-heading">SPECIALITIES</h3>
-            <section id="specials">
-                <ul>
-                    <li>
-                        <div class="specials__text-block specials-reveal">
-                            <span class="specials-item__name">Lasagne</span>
-                            <span class="specials-item__description">Herby 12-hour slow-cooked oxtail & Chianti ragù layered with pasta, béchamel, mozzarella & Parmesan</span>
-                            <span class="specials-item__price">FROM $22</span>
-                        </div>
-                        <img data-src="assets/images/lasagna.jpg" class="lazyload reveal-item specials-reveal" alt="lasagna">
-                    </li>
-                    <li>
-                        <picture>
-                            <img data-src="assets/images/tramezzino.jpeg" class="lazyload reveal-item specials-reveal" alt="tramezzino">
-                        </picture>
-                        <div class="specials__text-block specials-reveal">
-                            <span class="specials-item__name">Tramezzino</span>
-                            <span class="specials-item__description"> sun dried tomato, avocado, provolone cheese and basil garlic sauce </span>
-                            <br>
-                            <span class="specials-item__price">FROM $24</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="specials__text-block specials-reveal">
-                            <span class="specials-item__name">Insalate Tritata</span>
-                            <span class="specials-item__description">
+            <div class="specials__parallax">
+                <div class="specials__parallax__inner">
+                    <h2 class="specials__parallax__inner__header">OUR SPECIALITIES</h2>
+                </div>
+            </div>
+
+            <div class="specials__container">
+                <h3 class="specials__heading">SPECIALITIES</h3>
+                <section id="specials">
+                    <ul class="specials__list__container">
+                        <li class="specials__item__container">
+                            <div class="specials__text-block specials-reveal">
+                                <span class="specials-item__name">Lasagne</span>
+                                <span class="specials-item__description">Herby 12-hour slow-cooked oxtail & Chianti ragù layered with pasta, béchamel, mozzarella & Parmesan</span>
+                                <span class="specials-item__price">FROM $22</span>
+                            </div>
+                            <img data-src="assets/images/lasagna.jpg" class="lazyload reveal-item specials-reveal" alt="lasagna">
+                        </li>
+                        <li class="specials__item__container">
+                            <picture>
+                                <img data-src="assets/images/tramezzino.jpeg" class="lazyload reveal-item specials-reveal" alt="tramezzino">
+                            </picture>
+                            <div class="specials__text-block specials-reveal">
+                                <span class="specials-item__name">Tramezzino</span>
+                                <span class="specials-item__description"> sun dried tomato, avocado, provolone cheese and basil garlic sauce </span>
+                                <br>
+                                <span class="specials-item__price">FROM $24</span>
+                            </div>
+                        </li>
+                        <li class="specials__item__container">
+                            <div class="specials__text-block specials-reveal">
+                                <span class="specials-item__name">Insalate Tritata</span>
+                                <span class="specials-item__description">
                     Chopped arugula, romaine, tomatoes, red onions,         
                     cucumbers, and balsamic vinaigrette</span>
-                            <span class="specials-item__price">FROM $14</span>
-                        </div>
-                        <picture>
-                            <img data-src="assets/images/salad.jpg" class="lazyload reveal-item specials-reveal" alt="salad">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <img data-src="assets/images/spaghetti.jpg" class="lazyload reveal-item specials-reveal" alt="spaghetti">
-                        </picture>
-                        <div class="specials__text-block  specials-reveal">
-                            <span class="specials-item__name">Pasta Marinaro</span> <span class="specials-item__description">An Avellinesi -
+                                <span class="specials-item__price">FROM $14</span>
+                            </div>
+                            <picture>
+                                <img data-src="assets/images/salad.jpg" class="lazyload reveal-item specials-reveal" alt="salad">
+                            </picture>
+                        </li>
+                        <li class="specials__item__container">
+                            <picture>
+                                <img data-src="assets/images/spaghetti.jpg" class="lazyload reveal-item specials-reveal" alt="spaghetti">
+                            </picture>
+                            <div class="specials__text-block  specials-reveal">
+                                <span class="specials-item__name">Pasta Marinaro</span> <span class="specials-item__description">An Avellinesi -
                     style fusilli with grilled portobello mushrooms and cherry  
                     tomatoes</span>
-                            <span class="specials-item__price">FROM $18</span>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <!-- parallax image 2 -->
-            <section class="parallax2">
-                <div class="parallax-inner2">
-                </div>
-            </section>
-            <img data-src="assets/images/pizza.png" class="side-pizza lazyload specials-reveal" alt="pizza">
-            <img data-src="assets/images/pasta.png" class="side-pasta lazyload specials-reveal" alt="pasta">
+                                <span class="specials-item__price">FROM $18</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
             <!-- menu section -->
-
-            <h3>Menu</h3>
-            <section id="menu-section">
-                <hr>
-                <h4>FOOD & APERITIVES</h4>
-
-                <ul class="menu-section__row">
-                    <li class="menu-section__list">
-                        <span class="menu-item__name">Antipasti della Casa</span>
-                        <span class="menu-item__price">$18</span>
-                        <span class="menu-item__description">Prosciutto, hot dry sausage, sweet capicola,    </span>
-                        <span class="menu-item__description">mozzarella prosciutto roll with peppers</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list">
-                        <span class="menu-item__name ">Bianca con Prosciutto </span>
-                        <span class="menu-item__price ">$16</span>
-                        <span class="menu-item__description">White Pizza with Prosciutto, handmade mozzarella,                    </span>
-                        <span class="menu-item__description">fontal, fresh tomatoes and arugula</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list">
-                        <span class="menu-item__name ">Campagnola</span>
-                        <span class="menu-item__price ">$16</span>
-                        <span class="menu-item__description ">Tomato sauce, handmade mozzarella, Italian sausage,</span>
-                        <span class="menu-item__description "> peppers, onions and EVOO</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list">
-                        <span class="menu-item__name">Vitello alla Parmigiana</span>
-                        <span class="menu-item__price">$28</span>
-                        <span class="menu-item__description">     Lightly breaded veal cutlet, pan seared,  </span>
-                        <span class="menu-item__description">     then topped with our marinara tomato sauce</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list">
-                        <span class="menu-item__name">Pollo al Taleggio </span>
-                        <span class="menu-item__price">$21</span>
-                        <span class="menu-item__description ">Chicken cutlet breaded with handmade breadcrumbs,</span>
-                        <span class="menu-item__description ">pan seared in a white wine sauce</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list">
-                        <span class="menu-item__name">Tagliatelle Fra'Diavolo</span>
-                        <span class="menu-item__price">$24</span>
-                        <span class="menu-item__description ">    Thin flat noodles with shrimp, clams, mussels,  </span>
-                        <span class="menu-item__description ">    and calamari in a spicy marinara sauce</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list">
-                        <span class="menu-item__name">AUBERGINE PENNE ARRABBIATA</span>
-                        <span class="menu-item__price">$20</span>
-                        <span class="menu-item__description ">   Fresh pasta with fiery tomato & garlic sauce, </span>
-                        <span class="menu-item__description ">   fried aubergine, olives & fresh chilli</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                </ul>
-            </section>
-            <!-- desert menu -->
-            <section id="desert-menu">
-
-                <h4>DESERTS</h4>
-
-                <ul class="menu-section__row ">
-                    <li class="menu-section__list ">
-                        <span class="menu-item__name ">TIRAMISU</span>
-                        <span class="menu-item__price ">$9</span>
-                        <span class="menu-item__description ">   Our take on the classic coffee-flavoured sponge,</span> <span class="menu-item__description ">mascarpone & chocolate</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list ">
-                        <span class="menu-item__name ">CANNOLI</span>
-                        <span class="menu-item__price ">$10</span>
-                        <span class="menu-item__description ">Two crisp mini pastry shells stuffed with sweet ricotta</span>
-                        <span class="menu-item__description "> and topped with pistachios </span>
-
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list ">
-                        <span class="menu-item__name ">CLOTTED CREAM PANNA COTTA</span>
-                        <span class="menu-item__price ">$8</span>
-                        <span class="menu-item__description ">Raspberry, smashed meringue & fresh mint</span>
-                        <span class="menu-item__description ">with vanilla and semi skimmed milk</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list ">
-                        <span class="menu-item__name ">SICILIAN RICOTTA</span>
-                        <span class="menu-item__price ">$7</span>
-                        <span class="menu-item__description ">cheesecake served with strawberries</span>
-                        <span class="menu-item__description ">and melted cholate chips</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                    <li class="menu-section__list ">
-                        <span class="menu-item__name ">LEMON POLENTA CAKE</span>
-                        <span class="menu-item__price ">$7</span>
-                        <span class="menu-item__description">Summer berry-rippled crème fraîche & lemon zest</span>
-                        <span class="menu-item__description ">with a creamy filling</span>
-                        <span class="dot-leader"></span>
-                    </li>
-                </ul>
-
-            </section>
-            <img data-src="assets/images/pasta-raw.png" class="raw-pasta-image lazyload specials-reveal" alt="pasta">
-
-            <!-- footer -->
-            <!-- <section id="footer ">
-                <h3>Esterno</h3>
-                <div class="footer page-section" footer-link="#reservations-link"><a href="www.facebook.com " class="footer__link "><i class="fa fa-facebook " aria-hidden="true "></i></a>
-                    <a href="www.twitter.com " class="footer__link "><i class="fa fa-twitter " aria-hidden="true "></i></a>
-                    <br> 6pm - 11pm <br> 2150 Some Street<br> Some Town, AX 33333<br>455-555-5555 <br>
+            <div class="menu-section__parallax">
+                <div class="menu-section__parallax-inner">
                 </div>
-            </section>
-        </div> -->
-            <!-- /wrapper  -->
-        </div>
-        <!-- wrapper outer -->
+            </div>
+            <img data-src="assets/images/pizza.png" class="menu-section__side-pizza lazyload menu-section-reveal" alt="pizza">
+            <img data-src="assets/images/pasta.png" class="menu-section__side-pasta lazyload menu-section-reveal" alt="pasta">
 
+            <div class="menu-section__container">
+                <h3 class="menu-section__heading">Menu</h3>
+                <section id="menu-section">
+                    <hr class="menu-section__heading__underline">
+                    <h4 class="menu-section__sub-heading">FOOD & APERITIVES</h4>
+
+                    <ul class="menu-section__row">
+                        <li class="menu-section__list">
+                            <span class="menu-item__name">Antipasti della Casa</span>
+                            <span class="menu-item__price">$18</span>
+                            <span class="menu-item__description">Prosciutto, hot dry sausage, sweet capicola,    </span>
+                            <span class="menu-item__description">mozzarella prosciutto roll with peppers</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list">
+                            <span class="menu-item__name ">Bianca con Prosciutto </span>
+                            <span class="menu-item__price ">$16</span>
+                            <span class="menu-item__description">White Pizza with Prosciutto, handmade mozzarella,                    </span>
+                            <span class="menu-item__description">fontal, fresh tomatoes and arugula</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list">
+                            <span class="menu-item__name ">Campagnola</span>
+                            <span class="menu-item__price ">$16</span>
+                            <span class="menu-item__description ">Tomato sauce, handmade mozzarella, Italian sausage,</span>
+                            <span class="menu-item__description "> peppers, onions and EVOO</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list">
+                            <span class="menu-item__name">Vitello alla Parmigiana</span>
+                            <span class="menu-item__price">$28</span>
+                            <span class="menu-item__description">     Lightly breaded veal cutlet, pan seared,  </span>
+                            <span class="menu-item__description">     then topped with our marinara tomato sauce</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list">
+                            <span class="menu-item__name">Pollo al Taleggio </span>
+                            <span class="menu-item__price">$21</span>
+                            <span class="menu-item__description ">Chicken cutlet breaded with handmade breadcrumbs,</span>
+                            <span class="menu-item__description ">pan seared in a white wine sauce</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list">
+                            <span class="menu-item__name">Tagliatelle Fra'Diavolo</span>
+                            <span class="menu-item__price">$24</span>
+                            <span class="menu-item__description ">    Thin flat noodles with shrimp, clams, mussels,  </span>
+                            <span class="menu-item__description ">    and calamari in a spicy marinara sauce</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list">
+                            <span class="menu-item__name">AUBERGINE PENNE ARRABBIATA</span>
+                            <span class="menu-item__price">$20</span>
+                            <span class="menu-item__description ">   Fresh pasta with fiery tomato & garlic sauce, </span>
+                            <span class="menu-item__description ">   fried aubergine, olives & fresh chilli</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <!-- desert menu -->
+            <div class="desert-menu__container">
+                <section id="desert-menu">
+
+                    <h4 class="menu-section__sub-heading">DESERTS</h4>
+
+                    <ul class="menu-section__row ">
+                        <li class="menu-section__list ">
+                            <span class="menu-item__name ">TIRAMISU</span>
+                            <span class="menu-item__price ">$9</span>
+                            <span class="menu-item__description ">   Our take on the classic coffee-flavoured sponge,</span> <span class="menu-item__description ">mascarpone & chocolate</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list ">
+                            <span class="menu-item__name ">CANNOLI</span>
+                            <span class="menu-item__price ">$10</span>
+                            <span class="menu-item__description ">Two crisp mini pastry shells stuffed with sweet ricotta</span>
+                            <span class="menu-item__description "> and topped with pistachios </span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list ">
+                            <span class="menu-item__name ">CLOTTED CREAM PANNA COTTA</span>
+                            <span class="menu-item__price ">$8</span>
+                            <span class="menu-item__description ">Raspberry, smashed meringue & fresh mint</span>
+                            <span class="menu-item__description ">with vanilla and semi skimmed milk</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list ">
+                            <span class="menu-item__name ">SICILIAN RICOTTA</span>
+                            <span class="menu-item__price ">$7</span>
+                            <span class="menu-item__description ">cheesecake served with strawberries</span>
+                            <span class="menu-item__description ">and melted cholate chips</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                        <li class="menu-section__list ">
+                            <span class="menu-item__name ">LEMON POLENTA CAKE</span>
+                            <span class="menu-item__price ">$7</span>
+                            <span class="menu-item__description">Summer berry-rippled crème fraîche & lemon zest</span>
+                            <span class="menu-item__description ">with a creamy filling</span>
+                            <span class="dot-leader"></span>
+                        </li>
+                    </ul>
+
+                </section>
+                <img data-src="assets/images/pasta-raw.png" class="menu-section__raw-pasta lazyload menu-section-reveal" alt="pasta">
+                <!-- /wrapper -->
+            </div>
+        </div>
+
+        <!-- modal -->
         <div class="modal">
             <i class="fa fa-times modal__close" aria-hidden="true"></i>
             <div class="modal__inner">
-                <div class="res-top">
+                <div class="modal__header__container">
                     <p class="modal__header">Reservations</p>
                     <p> for</p>
                     <p><span id="todays-day" class="modal__date"></span>
                         <span id="todays-date" class="modal__date"></span></p>
                 </div>
-                <form action="" method="get" name="reservationform" id="reservationform">
+                <form action="" method="get" name="reservationform" id="reservationform" class="modal__form">
 
-                    <div class="box">
+                    <div class="modal_input__container">
                         <label for="fname" class="modal__label">FIRST NAME</label><br>
-                        <input type="text" name="fname" required><br>
+                        <input type="text" name="fname" class="modal__input" required><br>
                     </div>
 
-                    <div class="box">
+                    <div class="modal_input__container">
                         <label for="lname" class="modal__label">LAST NAME</label><br>
-                        <input type="text" name="lname" required><br>
+                        <input type="text" name="lname" class="modal__input" required><br>
                     </div>
 
 
-                    <div class="box">
+                    <div class="modal_input__container">
                         <label for="email" class="modal__label">EMAIL</label><br>
-                        <input type="email" name="email" required><br>
+                        <input type="email" name="email" class="modal__input" required><br>
                     </div>
 
-                    <div class="box">
+                    <div class="modal_input__container">
                         <label for="phone" class="modal__label">PHONE</label><br>
-                        <input type="telephone" name="phone" required><br>
+                        <input type="telephone" name="phone" class="modal__input" required><br>
                     </div>
 
 
-                    <div class="box">
+                    <div class="modal_input__container">
                         <label for="guests" class="modal__label">GUESTS</label><br>
-                        <select name="guests" id="guests">
+                        <select name="guests" id="guests" class="modal__select">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -305,9 +303,9 @@
                         </select>
                     </div>
 
-                    <div class="box">
+                    <div class="modal_input__container">
                         <label for="time" class="modal__label">TIME</label><br>
-                        <select id="time" name="time">
+                        <select id="time" name="time" class="modal__select">
                     <option value="6">6:00pm</option>
                     <option value="630">6:30pm</option>
                     <option value="7">7:00pm</option>
@@ -328,7 +326,7 @@
             </div>
         </div>
 
-        <script src="assets/scripts/App-94a481fbe8.js"></script>
+        <script src="assets/scripts/App-48fba1e40e.js"></script>
 </body>
 
 </html>

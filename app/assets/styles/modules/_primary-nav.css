@@ -13,7 +13,7 @@
 			display: none;
 		}
 	}
-	&__close{
+	&__close {
 		color: white;
 		position: absolute;
 		top: 20px;
@@ -27,39 +27,58 @@
 			display: none;
 		}
 	}
-	
-	&__logo{
-    display:none;
-    @mixin atLarge {
-    display:block; 
-    color:white;
-    font-size:50px;
-    position:absolute;
-    top:180px;
-    left:220px;
-    z-index:7;
-	font-family:Voyage Regular;
-}
-img{
-	width:20px;
-}
-}
-
-	&__logo--sub{
-		display:none;
-    @mixin atLarge {
-    display:block; 
-    color:white;
-    font-size:10px;
-    position:absolute;
-    top:44px;
-    left:18px;
-    z-index:7;
-	font-family:Roboto;
-}
+	&__logo {
+		display: none;
+		@mixin atLarge {
+			display: block;
+			color: white;
+			font-size: 50px;
+			position: absolute;
+			top: 180px;
+			left: 220px;
+			z-index: 7;
+			font-family: Voyage Regular;
+			&__sub {
+				display: none;
+				@mixin atLarge {
+					display: block;
+					color: white;
+					font-size: 10px;
+					position: absolute;
+					top: 44px;
+					left: 18px;
+					z-index: 7;
+					font-family: Roboto;
+				}
+				&--forkhead {
+					display: none;
+					@mixin atLarge {
+						display: block;
+						color: white;
+						font-size: 16px;
+						position: absolute;
+						top: 44px;
+						left: 80px;
+						z-index: 7;
+						width: 20px;
+					}
+				}
+				&--forkhandle {
+					display: none;
+					@mixin atLarge {
+						display: block;
+						color: white;
+						font-size: 16px;
+						position: absolute;
+						top: 47px;
+						left: -3px;
+						z-index: 7;
+						width: 20px;
+					}
+				}
+			}
+		}
 	}
-
-
 	&__row {
 		overflow: hidden;
 		background: #000;
@@ -82,7 +101,7 @@ img{
 			text-align: center;
 		}
 		@mixin atLarge {
-			width:75%;
+			width: 75%;
 			top: 180px;
 			font-weight: 700;
 			left: 20%;
@@ -117,9 +136,9 @@ img{
 		@mixin atMedium {
 			border: none;
 		}
-		@mixin atLarge{
-			font-size:1em;
-			font-weight:700;
+		@mixin atLarge {
+			font-size: 1em;
+			font-weight: 700;
 		}
 	}
 	&__bullet {
@@ -130,52 +149,23 @@ img{
 			vertical-align: 30%;
 			color: #555;
 		}
-		@mixin atLarge{
-			font-size:5px;
+		@mixin atLarge {
+			font-size: 5px;
 		}
 	}
-}
-
-.forkhead{
-	display:none;
-    @mixin atLarge {
-    display:block; 
-    color:white;
-    font-size:16px;
-    position:absolute;
-    top:44px;
-    left:80px;
-    z-index:7;
-}
-}
-
-.forkhandle{
-	display:none;
-    @mixin atLarge {
-    display:block; 
-    color:white;
-    font-size:16px;
-    position:absolute;
-    top:47px;
-    left:-3px;
-    z-index:7;
-}	
-}
-
-.address{
-
-	padding:50px 0;
-	float: none;
-		color:white;
-	text-align:center;
-	
+	&__address {
+		padding: 50px 0;
+		float: none;
+		color: white;
+		text-align: center;
 		@mixin atMedium {
 			display: inline-block;
 			width: auto;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		@mixin atLarge{
-			display:none;
+		@mixin atLarge {
+			display: none;
 		}
+	}
 }

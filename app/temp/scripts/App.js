@@ -68,6 +68,7 @@
 	new _RevealOnScroll2.default((0, _jquery2.default)(".info__image__about"), "75%");
 	new _RevealOnScroll2.default((0, _jquery2.default)(".info__image__reservations"), "100%");
 	new _RevealOnScroll2.default((0, _jquery2.default)(".specials-reveal"), "60%");
+	new _RevealOnScroll2.default((0, _jquery2.default)(".menu-section-reveal"), "60%");
 	var modal = new _Modal2.default();
 
 /***/ }),

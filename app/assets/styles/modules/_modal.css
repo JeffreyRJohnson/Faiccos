@@ -1,135 +1,110 @@
-.modal{
-    position:fixed;
-    z-index:10;
-    background-color: rgba(255,255,255, .94);
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    opacity:0;
-    visibility:hidden;
+.modal {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, .94);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
     transform: scale(1.2);
     transition: all .3s ease-out;
-
     &--is-visible {
-        opacity:1;
+        opacity: 1;
         visibility: visible;
-        transform:scale(1);
+        transform: scale(1);
     }
-
-    &__inner{
-        position:absolute;
-        width:100%;
+    &__inner {
+        position: absolute;
+        width: 100%;
     }
-
-&__close{
-    position:absolute;
-    top:20px;
-    right:20px;
-    cursor:pointer;
-    z-index:15;
-    &:hover{
-        color:goldenrod;
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 15;
+        &:hover {
+            color: goldenrod;
+        }
+    }
+    &__header {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 3em;
+        &__container {
+            width: 100%;
+            margin-bottom: 60px;
+            margin-top: 60px;
+            text-align: center;
+        }
+    }
+    &__date {
+        font-size: 2em;
+        margin-right: 10px;
+    }
+    &__form {
+        width: 320px;
+        margin: 0 7%;
+        @mixin atSmall {
+            width: 480px;
+            margin: 0 auto;
+        }
+        @mixin atMedium {
+            width: 520px;
+        }
+    }
+    .modal_input__container {
+        width: 50%;
+        box-sizing: border-box;
+        float: left;
+        &:nth-child(odd) {
+            padding-right: 10px;
+        }
+    }
+    &__label {
+        font-size: .8em;
+        font-weight: 900;
+    }
+    &__input {
+        width: 130px;
+        height: 44px;
+        border: 2px solid #999;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        @mixin atSmall {
+            width: 200px;
+        }
+        @mixin atMedium {
+            width: 240px;
+        }
+        &:last-child {
+            margin-top: 44px;
+            background: goldenrod;
+            color: white;
+            border: none;
+            width: 100px;
+            height: 44px;
+        }
+        &:last-child:hover {
+            cursor: pointer;
+        }
+        &:focus {
+            border: 2px solid #555;
+        }
+    }
+    &__select {
+        width: 134px;
+        height: 48px;
+        margin-top: 10px;
+        border: 2px solid #999;
+        background-color: white;
+        @mixin atSmall {
+            width: 204px;
+        }
+        @mixin atMedium {
+            width: 244px;
+        }
     }
 }
-
-&__header{
-    display:inline-block;
-    font-weight:700;
-    font-size:3em;
-
-}
-
-&__label{
-    font-size:.8em;
-    font-weight:900;
-}
-
-
-}
-
-form{
-width: 320px; 
-margin:0 7%;
-@mixin atSmall{
-    width:480px;
-    margin: 0 auto;
-}
- @mixin atMedium{
-     width:520px;    
- } 
-}
-
-input{
-    width:130px;
-    height: 44px;
-    border:2px solid #999;
-   margin-top:10px;
-    margin-bottom:20px;
-    @mixin atSmall{
-        width:200px;
-    }
-    @mixin atMedium{
-        width:240px;
-    }
-}
-
-
-input:last-child{
-    margin-top:44px;
-    background:goldenrod;
-    color:white;
-    border:none;
-    width:100px;
-    height:44px;
-}
-
-input:last-child:hover{
-    cursor:pointer;
-}
-
-input:focus {
-    border: 2px solid #555;
-}
-
-
-
-select {
-     width: 134px;
-     height:48px;
-    margin-top:10px;
-    border:2px solid #999;
-    background-color: white;
-     @mixin atSmall{
-        width:204px;
-    }
-    @mixin atMedium{
-        width:244px;
-    }
-}
-
-.box{
-    width:50%;
-    box-sizing: border-box;
-    float:left;
-}
-
-.box:nth-child(odd){
-    padding-right:10px;
-}
-
-#todays-day{
-    margin-right:10px;
-}
-
-.modal__date{
-    font-size:2em;
-}
-
-.res-top{
-    width:100%;
-    margin-bottom:60px;
-    margin-top:60px;
-    text-align:center;
-}
-
