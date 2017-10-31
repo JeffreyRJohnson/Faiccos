@@ -1,7 +1,18 @@
+@font-face {
+	font-family: 'Voyage Regular';
+	src: url('/assets/fonts/voyage_regular-webfont.eot');
+	src: url('/assets/fonts/voyage_regular-webfont.eot?#iefix')format('embedded-opentype'),
+	     url ('/assets/fonts/voyage_regular.woff2') format('woff2'),
+	     url ('/assets/fonts/voyage_regular.woff') format('woff'),
+	     url('/assets/fonts/voyage_regular-webfont.ttf') format('truetype'),
+	     url('/assets/fonts/voyage_regular-webfont.svg#voyageregular')format('svg');
+}
+
 * {
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #333;
@@ -9,31 +20,15 @@ body {
 	background-color: $offwhite;
 }
 
-@font-face {
-	font-family: 'Voyage Regular';
-	src:url ('/assets/fonts/voyage_regular.woff2');
-	src: url('/assets/fonts/voyage_regular-webfont.otf'),
-	src:url('/assets/fonts/voyage_regular-webfont.eot'),
-	src:url ('/assets/fonts/voyage_regular.woff'),
-    src:url('/assets/fonts/voyage_regular-webfont.eot?#iefix'),
-    src:url('/assets/fonts/voyage_regular-webfont.ttf'),
-    src:url('/assets/fonts/voyage_regular-webfont.svg#voyageregular'),
-	 @import url('https://fonts.googleapis.com/css?family=Rouge+Script');
-	
-}
 img {
 	width: 100%;
 	height: auto;
 }
+
 h3 {
 	font-size: 3em;
 	font-family: "Voyage Regular";
 	text-align: center;
 	padding: 30px 0;
-	font-weight:300;
+	font-weight: 300;
 }
-
-
-
-
-
