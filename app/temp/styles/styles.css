@@ -424,24 +424,13 @@ textarea {
 @font-face {
 	font-family: 'Voyage Regular';
 	src: url('/assets/fonts/voyage_regular-webfont.eot');
-	src: local('Voyage Regular'),
-	   url('/assets/fonts/voyage_regular-webfont.ttf') format('truetype');
-}
-
-/*	
-	('/assets/fonts/voyage_regular.woff') format('woff'),
- 
-
-	 src: local('Voyage Regular'),
+	src: url('/assets/fonts/voyage_regular-webfont.eot?#iefix')format('embedded-opentype'),
+	url('/assets/fonts/voyage_regular-webfont.ttf') format('truetype'),
+	url('/assets/fonts/voyage_regular.woff2') format('woff2'),
+	url('/assets/fonts/voyage_regular.woff') format('woff'),	
+	url('/assets/fonts/voyage_regular-webfont.svg#voyageregular')format('svg'),
 	url('/assets/fonts/voyage_regular-webfont.otf') format('opentype');
-	url('/assets/fonts/voyage_regular-webfont.svg#voyageregular')format('svg');
-    url('/assets/fonts/voyage_regular-webfont.eot?#iefix')format('embedded-opentype'),
-	url ('/assets/fonts/voyage_regular.woff2') format('woff2'),
-
-	
-    url('/assets/fonts/voyage_regular-webfont.otf') format('truetype');
-}
-*/
+	}
 
 * {
 	margin: 0;
@@ -1623,7 +1612,7 @@ clear:both;
 
 .modal-confirmation{
   position: fixed;
-  z-index: 12;
+  z-index: 10;
   background-color: rgba(255, 255, 255, .94);
   top: 0;
   bottom: 0;
