@@ -1,12 +1,12 @@
 @font-face {
 	font-family: 'Voyage Regular';
-	src: url('../../../assets/fonts/voyage_regular-webfont.eot');
-	src: url('../../../assets/fonts/voyage_regular-webfont.eot?#iefix')format('embedded-opentype'),
-	url('../../../assets/fonts/voyage_regular-webfont.ttf') format('truetype'),
-	url('../../../assets/fonts/voyage_regular.woff2') format('woff2'),
-	url('../../../assets/fonts/voyage_regular.woff') format('woff'),	
-	url('../../../assets/fonts/voyage_regular-webfont.svg#voyageregular')format('svg'),
-	url('../../../assets/fonts/voyage_regular-webfont.otf') format('opentype');
+	src: url('../../assets/fonts/voyage_regular-webfont.eot');
+	src: url('../../assets/fonts/voyage_regular-webfont.eot?#iefix')format('embedded-opentype'),
+	url('../../assets/fonts/voyage_regular-webfont.ttf') format('truetype'),
+	url('../../assets/fonts/voyage_regular.woff2') format('woff2'),
+	url('../../assets/fonts/voyage_regular.woff') format('woff'),	
+	url('../../assets/fonts/voyage_regular-webfont.svg#voyageregular')format('svg'),
+	url('../../assets/fonts/voyage_regular-webfont.otf') format('opentype');
 	}
  
 * {
@@ -28,7 +28,7 @@ img {
 
 h3 {
 	font-size: 3em;
-	font-family: "Voyage Regular";
+	font-family: 'Voyage Regular';
 	text-align: center;
 	padding: 30px 0;
 	font-weight: 300;
