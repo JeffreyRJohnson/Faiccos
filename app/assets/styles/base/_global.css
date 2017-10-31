@@ -8,9 +8,10 @@ body {
 	box-sizing: border-box;
 	background-color: $offwhite;
 }
+
 @font-face {
 	font-family: 'Voyage Regular';
-	src: url('/assets/fonts/Voyage Regular.otf');
+	src: url('/assets/fonts/voyage_regular-webfont.otf');
 	src:
 	url('/assets/fonts/voyage_regular-webfont.eot'),
 	url ('/assets/fonts/voyage_regular.woff'),
