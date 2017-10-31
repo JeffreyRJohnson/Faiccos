@@ -426,6 +426,7 @@ textarea {
 	src: url('../../assets/fonts/voyage_regular-webfont.eot');
 	src: url('../../assets/fonts/voyage_regular-webfont.eot?#iefix')format('embedded-opentype'),
 	url('../../assets/fonts/voyage_regular-webfont.ttf') format('truetype'),
+	url('voyage_regular-webfont.ttf') format('truetype'),
 	url('../../assets/fonts/voyage_regular.woff2') format('woff2'),
 	url('../../assets/fonts/voyage_regular.woff') format('woff'),	
 	url('../../assets/fonts/voyage_regular-webfont.svg#voyageregular')format('svg'),
