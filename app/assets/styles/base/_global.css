@@ -11,13 +11,12 @@ body {
 
 @font-face {
 	font-family: 'Voyage Regular';
-	src: url('/assets/fonts/voyage_regular-webfont.otf');
-	src:
-	url('/assets/fonts/voyage_regular-webfont.eot'),
-	url ('/assets/fonts/voyage_regular.woff'),
-    url('/assets/fonts/voyage_regular-webfont.eot?#iefix'),
-    url('/assets/fonts/voyage_regular-webfont.ttf'),
-    url('/assets/fonts/voyage_regular-webfont.svg#voyageregular'),
+	src: url('./assets/fonts/voyage_regular-webfont.otf');
+	src:url('./assets/fonts/voyage_regular-webfont.eot'),
+	src:url ('./assets/fonts/voyage_regular.woff'),
+    src:url('./assets/fonts/voyage_regular-webfont.eot?#iefix'),
+    src:url('./assets/fonts/voyage_regular-webfont.ttf'),
+    src:url('./assets/fonts/voyage_regular-webfont.svg#voyageregular'),
 	 @import url('https://fonts.googleapis.com/css?family=Rouge+Script');
 	
 }
