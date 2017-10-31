@@ -425,7 +425,7 @@ textarea {
 	font-family: 'Voyage Regular';
 	src: url('assets/voyage_regular-webfont.eot');
 	src: url('assets/voyage_regular-webfont.eot?#iefix')format('embedded-opentype'),
-	url('../assets/voyage_regular-webfont.ttf') format('truetype'),
+	url('voyage_regular-webfont.ttf') format('truetype'),
 	url('voyage_regular-webfont.woff') format('woff');
 	}
 
