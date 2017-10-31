@@ -10810,8 +10810,8 @@
 	        this.openModalButton = (0, _jquery2.default)(".open-modal");
 	        this.modal = (0, _jquery2.default)(".modal");
 	        this.closeModalButton = (0, _jquery2.default)(".modal__close");
-	        this.reservationButton = (0, _jquery2.default)(".res-button");
-	        this.processingButton = (0, _jquery2.default)(".wait-button").hide();
+	        this.reservationButton = (0, _jquery2.default)(".modal__res-button");
+	        this.processingButton = (0, _jquery2.default)(".modal__wait-button").hide();
 	        this.events();
 	        var d = new Date();
 	        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

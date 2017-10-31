@@ -8,8 +8,8 @@ class Modal {
         this.openModalButton = $(".open-modal");
         this.modal = $(".modal");
         this.closeModalButton = $(".modal__close");
-        this.reservationButton = $(".res-button");
-        this.processingButton = $(".wait-button").hide();
+        this.reservationButton = $(".modal__res-button");
+        this.processingButton = $(".modal__wait-button").hide();
         this.events();
         var d = new Date();
         var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

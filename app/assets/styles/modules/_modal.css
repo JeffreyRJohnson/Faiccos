@@ -79,20 +79,7 @@
         @mixin atMedium {
             width: 240px;
         }
-        &:last-child {
-            margin-top: 44px;
-            background: goldenrod;
-            color: white;
-            border: none;
-            width: 100px;
-            height: 44px;
-        }
-        &:last-child:hover {
-            cursor: pointer;
-        }
-        &:focus {
-            border: 2px solid #555;
-        }
+        
     }
     &__select {
         width: 134px;
@@ -107,4 +94,48 @@
             width: 244px;
         }
     }
+    &__res-button {
+            margin-top: 44px;
+            background: goldenrod;
+            color: white;
+            border: none;
+            width: 100px;
+            height: 44px;
+            cursor: pointer;
+        }
+        &:focus {
+            border: 2px solid #555;
+        }
+        &-confirmation{
+        position: fixed;
+    z-index: 12;
+    background-color: rgba(255, 255, 255, .94);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+    &--is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    &__inner {
+        position: absolute;
+        width: 100%;
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 15;
+        &:hover {
+            color: goldenrod;
+        }
+    }
+        }
 }

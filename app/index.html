@@ -257,12 +257,12 @@
                     </ul>
 
                 </section>
-                <img data-src="assets/images/pasta-raw.png" class="menu-section__raw-pasta lazyload menu-section-reveal" alt="pasta">
                 <!-- /wrapper -->
             </div>
+            <img data-src="assets/images/pasta-raw.png" class="menu-section__raw-pasta lazyload menu-section-reveal" alt="pasta">
         </div>
 
-        <!-- modal -->
+        <!--reservation modal -->
         <div class="modal">
             <i class="fa fa-times modal__close" aria-hidden="true"></i>
             <div class="modal__inner">
@@ -322,12 +322,18 @@
                     </select>
                     </div>
                     <!-- <input type="time" name="time" min="18:00" max="22:00" required><br> -->
-                    <input type="submit" value="PROCESSING" class="wait-button">
-                    <input type="submit" value="RESERVE" class="res-button">
+                    <input type="submit" value="PROCESSING" class="modal__wait-button">
+                    <input type="submit" value="RESERVE" class="modal__res-button">
 
                 </form>
 
             </div>
+        </div>
+
+        <!-- confirmation modal -->
+        <div class="modal-confirmation">
+            <i class="fa fa-times modal__close" aria-hidden="true"></i>
+            <p>You're all set ! See you soon ! </p>
         </div>
 
         <!-- build:js assets/scripts/App.js -->

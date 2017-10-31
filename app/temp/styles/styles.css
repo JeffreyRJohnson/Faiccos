@@ -435,7 +435,7 @@ body {
 
 @font-face {
 	font-family: 'Voyage Regular';
-	src: url('/assets/fonts/Voyage Regular.otf');
+	src: url('/assets/fonts/voyage_regular-webfont.otf');
 	src:
 	url('/assets/fonts/voyage_regular-webfont.eot'),
 	url ('/assets/fonts/voyage_regular.woff'),
@@ -1434,12 +1434,15 @@ clear:both;
 
 .desert-menu__container {
 	padding-bottom: 100px;
+	
 }
 
 @media (min-width: 1400px) {
 
   .desert-menu__container {
-    padding: 0 200px 100px 200px;
+    width: 68%;
+    margin-left: 16%;
+    margin-right: 16%;
   }
 }
 
@@ -1573,23 +1576,6 @@ clear:both;
   }
 }
 
-.modal__input:last-child {
-  margin-top: 44px;
-  background: goldenrod;
-  color: white;
-  border: none;
-  width: 100px;
-  height: 44px;
-}
-
-.modal__input:last-child:hover {
-  cursor: pointer;
-}
-
-.modal__input:focus {
-  border: 2px solid #555;
-}
-
 .modal__select {
   width: 134px;
   height: 48px;
@@ -1610,6 +1596,59 @@ clear:both;
   .modal__select {
     width: 244px;
   }
+}
+
+.modal__res-button {
+  margin-top: 44px;
+  background: goldenrod;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.modal:focus {
+  border: 2px solid #555;
+}
+
+.modal-confirmation{
+  position: fixed;
+  z-index: 12;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .3s ease-out;
+}
+
+.modal-confirmation--is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.modal-confirmation__inner {
+  position: absolute;
+  width: 100%;
+}
+
+.modal-confirmation__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 15;
+}
+
+.modal-confirmation__close:hover {
+  color: goldenrod;
 }
 
 

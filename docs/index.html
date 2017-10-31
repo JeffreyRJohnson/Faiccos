@@ -9,7 +9,7 @@
     <meta name="description" content="The menu and webpage of the best Italian restaurant ever">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/styles/styles-6a099f5625.css"/>
+    <link rel="stylesheet" href="assets/styles/styles-3737c0ad97.css"/>
     <script src="assets/scripts/Vendor-b1908d1f3a.js"></script>
 </head>
 
@@ -253,12 +253,12 @@
                     </ul>
 
                 </section>
-                <img data-src="assets/images/pasta-raw.png" class="menu-section__raw-pasta lazyload menu-section-reveal" alt="pasta">
                 <!-- /wrapper -->
             </div>
+            <img data-src="assets/images/pasta-raw.png" class="menu-section__raw-pasta lazyload menu-section-reveal" alt="pasta">
         </div>
 
-        <!-- modal -->
+        <!--reservation modal -->
         <div class="modal">
             <i class="fa fa-times modal__close" aria-hidden="true"></i>
             <div class="modal__inner">
@@ -318,15 +318,21 @@
                     </select>
                     </div>
                     <!-- <input type="time" name="time" min="18:00" max="22:00" required><br> -->
-                    <input type="submit" value="PROCESSING" class="wait-button">
-                    <input type="submit" value="RESERVE" class="res-button">
+                    <input type="submit" value="PROCESSING" class="modal__wait-button">
+                    <input type="submit" value="RESERVE" class="modal__res-button">
 
                 </form>
 
             </div>
         </div>
 
-        <script src="assets/scripts/App-48fba1e40e.js"></script>
+        <!-- confirmation modal -->
+        <div class="modal-confirmation">
+            <i class="fa fa-times modal__close" aria-hidden="true"></i>
+            <p>You're all set ! See you soon ! </p>
+        </div>
+
+        <script src="assets/scripts/App-c1c019e753.js"></script>
 </body>
 
 </html>
