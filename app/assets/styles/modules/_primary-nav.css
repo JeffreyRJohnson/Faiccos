@@ -35,7 +35,7 @@
 			font-size: 50px;
 			position: absolute;
 			top: 180px;
-			left: 220px;
+			left: 15%;
 			z-index: 7;
 			font-family: Voyage Regular;
 			&__sub {
@@ -137,8 +137,12 @@
 			border: none;
 		}
 		@mixin atLarge {
-			font-size: 1em;
+			font-size: .9em;
 			font-weight: 700;
+			padding-top:20px;
+		}
+		@mixin atExtraLarge{
+			padding-top:0px;
 		}
 	}
 	&__bullet {
