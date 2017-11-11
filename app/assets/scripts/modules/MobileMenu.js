@@ -15,7 +15,6 @@ class MobileMenu {
 
     events() {
         this.menuIcon.click(this.toggleTheMenu.bind(this));
-        // this.reservationsLink.click(this.smoothScroll.bind(this, $("#reservations"), 4));
         this.aboutLink.click(this.smoothScroll.bind(this, $("#about"), 3));
         this.specialsLink.click(this.smoothScroll.bind(this, $("#specials"), 3));
         this.menuLink.click(this.smoothScroll.bind(this, $("#menu-section"), 1100));
