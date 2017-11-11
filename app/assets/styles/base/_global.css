@@ -2,8 +2,8 @@
 	font-family: 'Voyage Regular';
 	src: url('voyage_regular-webfont.eot');
 	src: url('voyage_regular-webfont.eot?#iefix')format('embedded-opentype'),
-	url('./voyage_regular-webfont.ttf') format('truetype'),
-	url('./voyage_regular-webfont.woff') format('woff');
+	url('../voyage_regular-webfont.ttf') format('truetype'),
+	url('../voyage_regular-webfont.woff') format('woff');
 	}
  
 * {
