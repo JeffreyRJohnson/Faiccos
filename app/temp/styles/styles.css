@@ -648,7 +648,7 @@ h3 {
 
   .primary-nav__row {
     top: 200px;
-    left: 20%;
+    left: 30%;
   }
 }
 
@@ -692,7 +692,7 @@ h3 {
 @media (min-width: 1010px) {
 
   .primary-nav__link {
-    font-size: .9em;
+    font-size: 0.9em;
     font-weight: 700;
     padding-top: 20px;
   }
